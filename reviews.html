@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews | Countryside Roofing Inc.</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --green:#2a6049;--green-dark:#1c4434;--green-mid:#3a7a5c;
+  --green-light:#e8f4ee;--accent:#4caf7d;
+  --gold:#e8a020;--gold-dark:#c8881a;
+  --white:#fff;--off-white:#f7f9f7;--gray-line:#e5e9e6;
+  --text:#1a2820;--text-mid:#4a5e54;--text-light:#7a8f84;
+  --max-w:1400px;--nav-h:68px;
+}
+body{font-family:'Outfit',sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--off-white);overflow-x:hidden;}
+
+/* UTIL */
+.util-bar{background:var(--green-dark);color:rgba(255,255,255,.75);font-size:.72rem;padding:.45rem 16px;display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;}
+.util-sep{color:rgba(255,255,255,.2);}
+
+/* NAV */
+.site-nav{background:var(--white);position:sticky;top:0;z-index:500;box-shadow:0 2px 24px rgba(0,0,0,.09);border-bottom:3px solid var(--green);}
+.nav-inner{width:100%;max-width:var(--max-w);margin:0 auto;padding:0 20px;height:var(--nav-h);display:flex;align-items:center;gap:1rem;}
+.nav-logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;flex-shrink:0;}
+.nav-logo-icon{width:42px;height:42px;background:var(--green);border-radius:8px;display:flex;align-items:center;justify-content:center;}
+.nav-logo-name{font-size:1.05rem;font-weight:700;color:var(--text);display:block;line-height:1.2;}
+.nav-logo-sub{font-size:.6rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--text-light);display:block;}
+.nav-spacer{flex:1;}
+.nav-links{display:flex;list-style:none;align-items:center;gap:.1rem;}
+.nav-links>li>a{display:flex;align-items:center;gap:.3rem;color:var(--text-mid);text-decoration:none;font-size:.875rem;font-weight:600;padding:.5rem .7rem;border-radius:5px;transition:color .2s,background .2s;white-space:nowrap;}
+.nav-links>li>a:hover,.nav-links>li.active>a{color:var(--green);background:var(--green-light);}
+.nav-links>li.active>a{font-weight:700;}
+.nav-phone{display:flex;align-items:center;gap:.4rem;color:var(--text-mid);text-decoration:none;font-size:.875rem;font-weight:700;white-space:nowrap;transition:color .2s;}
+.nav-phone:hover{color:var(--green);}
+.nav-cta{background:var(--gold);color:#fff!important;font-family:'Outfit',sans-serif;font-size:.84rem;font-weight:700!important;padding:.6rem 1.2rem!important;border-radius:5px!important;text-decoration:none;white-space:nowrap;display:inline-block;transition:background .2s;}
+.nav-cta:hover{background:var(--gold-dark)!important;}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:.5rem;border:2px solid var(--gray-line);background:none;border-radius:6px;}
+.nav-hamburger span{display:block;width:18px;height:2px;background:var(--text);border-radius:2px;transition:transform .25s,opacity .2s;}
+.nav-hamburger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-hamburger.is-open span:nth-child(2){opacity:0;}
+.nav-hamburger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.mob-phone-top{display:none;align-items:center;gap:5px;color:var(--green);font-size:.78rem;font-weight:700;text-decoration:none;white-space:nowrap;}
+.mobile-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);box-shadow:0 8px 32px rgba(0,0,0,.12);border-top:2px solid var(--green);z-index:490;max-height:calc(100vh - var(--nav-h));overflow-y:auto;}
+.mobile-nav.is-open{display:block;}
+.mobile-nav-inner ul{list-style:none;padding:8px 0;}
+.mobile-nav-inner>ul>li{border-bottom:1px solid var(--gray-line);}
+.mob-link{display:flex;align-items:center;justify-content:space-between;width:100%;padding:13px 20px;font-family:'Outfit',sans-serif;font-size:.92rem;font-weight:600;color:var(--text);background:none;border:none;text-align:left;cursor:pointer;text-decoration:none;}
+.mob-link:hover,.mob-link.active{background:var(--green-light);color:var(--green);}
+.mob-cta-row{padding:.9rem 1rem 1rem;border-top:2px solid var(--gray-line);}
+
+/* SHARED */
+.container{width:100%;max-width:var(--max-w);margin:0 auto;padding:0 24px;}
+
+/* HERO */
+.page-hero{background:linear-gradient(135deg,var(--green-dark),var(--green-mid));padding:4.5rem 0 4rem;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;right:-80px;top:-80px;width:400px;height:400px;border-radius:50%;background:rgba(255,255,255,.04);}
+.breadcrumb{font-size:.8rem;color:rgba(255,255,255,.55);margin-bottom:1.2rem;display:flex;gap:.4rem;}
+.breadcrumb a{color:rgba(255,255,255,.7);text-decoration:none;}
+.page-hero h1{font-size:clamp(2.2rem,4vw,3.2rem);font-weight:800;color:#fff;line-height:1.1;margin-bottom:1rem;position:relative;z-index:1;}
+.page-hero h1 em{font-style:normal;color:var(--accent);}
+.page-hero p{color:rgba(255,255,255,.8);font-size:1.05rem;max-width:600px;position:relative;z-index:1;}
+.hero-stats{display:flex;gap:0;margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.15);flex-wrap:wrap;}
+.h-stat{flex:1;min-width:110px;padding-right:1.5rem;}
+.h-stat:not(:last-child){border-right:1px solid rgba(255,255,255,.15);margin-right:1.5rem;}
+.h-stat-num{font-size:1.9rem;font-weight:800;color:var(--accent);line-height:1;}
+.h-stat-lbl{font-size:.75rem;color:rgba(255,255,255,.6);margin-top:.2rem;}
+
+/* PLATFORM BADGES */
+
+.badges-label{text-align:center;font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--text-light);margin-bottom:1.2rem;}
+.badges-inner{display:flex;align-items:stretch;justify-content:center;gap:1rem;flex-wrap:wrap;}
+.platform-badge{display:flex;align-items:center;gap:.75rem;padding:.9rem 1.5rem;background:var(--off-white);border:2px solid var(--gray-line);border-radius:12px;text-decoration:none;transition:box-shadow .2s,border-color .2s,transform .2s;min-width:200px;}
+.platform-badge:hover{box-shadow:0 6px 20px rgba(0,0,0,.1);border-color:var(--accent);transform:translateY(-2px);}
+.pb-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.9rem;font-weight:800;color:#fff;flex-shrink:0;}
+.pb-icon.google{background:#fff;border:2px solid #e0e0e0;font-size:1.3rem;}
+.pb-icon.fb{background:#1877f2;font-size:1.1rem;}
+.pb-icon.angi{background:#ff6b35;}
+.pb-icon.bbb{background:#003087;font-size:.6rem;letter-spacing:-.5px;}
+.pb-info{flex:1;}
+.pb-info strong{display:block;font-size:.95rem;font-weight:800;color:var(--text);}
+.pb-stars{color:#fbbf24;font-size:.82rem;}
+.pb-info span{display:block;font-size:.75rem;color:var(--text-light);}
+.pb-ext{font-size:1rem;color:var(--text-light);transition:color .2s;}
+.platform-badge:hover .pb-ext{color:var(--green);}
+
+/* REVIEWS SECTION */
+.reviews-section{padding:4rem 0 5rem;}
+
+/* Tab strip */
+.tab-strip{display:flex;gap:.4rem;flex-wrap:wrap;border-bottom:2px solid var(--gray-line);margin-bottom:2rem;}
+.rtab{display:flex;align-items:center;gap:.45rem;padding:.65rem 1.1rem;border-radius:6px 6px 0 0;font-size:.85rem;font-weight:600;cursor:pointer;border:1px solid transparent;border-bottom:none;color:var(--text-mid);background:transparent;margin-bottom:-2px;transition:all .2s;font-family:'Outfit',sans-serif;white-space:nowrap;}
+.rtab:hover{color:var(--green);background:var(--green-light);}
+.rtab.active{color:var(--green);border-color:var(--gray-line);border-bottom-color:transparent;background:var(--white);box-shadow:inset 0 3px 0 var(--green);font-weight:700;}
+.rtab-icon{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.62rem;font-weight:800;flex-shrink:0;}
+.rtab-icon.all{background:var(--green-light);color:var(--green);}
+.rtab-icon.google{background:#fff;border:1px solid #ddd;color:#4285f4;}
+.rtab-icon.fb{background:#1877f2;color:#fff;}
+.rtab-icon.angi{background:#ff6b35;color:#fff;}
+.rtab-icon.bbb{background:#003087;color:#fff;font-size:.45rem;}
+.rtab-score{font-size:.72rem;color:var(--text-light);}
+.rtab-stars{color:#fbbf24;font-size:.65rem;}
+
+/* Overall bar */
+.rev-overall{background:var(--white);border:1.5px solid var(--gray-line);border-radius:12px;padding:1.4rem 1.8rem;display:flex;align-items:center;justify-content:space-between;margin-bottom:2.5rem;flex-wrap:wrap;gap:1rem;box-shadow:0 2px 12px rgba(0,0,0,.04);}
+.rev-overall-left{display:flex;align-items:center;gap:1.2rem;}
+.rev-big-num{font-size:2.8rem;font-weight:800;color:var(--text);line-height:1;}
+.rev-stars-lg{color:#fbbf24;font-size:1.2rem;line-height:1;}
+.rev-count{font-size:.82rem;color:var(--text-light);margin-top:.2rem;}
+.rev-write-btn{background:var(--green);color:#fff;padding:.75rem 1.6rem;border-radius:7px;font-size:.88rem;font-weight:700;text-decoration:none;white-space:nowrap;font-family:'Outfit',sans-serif;transition:background .2s;}
+.rev-write-btn:hover{background:var(--green-dark);}
+
+/* Panel */
+.rev-panel{display:none;}
+.rev-panel.active{display:block;}
+
+/* Carousel */
+.carousel{position:relative;padding:0 56px;}
+.car-viewport{overflow:hidden;}
+.car-track{display:flex;gap:20px;transition:transform .38s cubic-bezier(.4,0,.2,1);}
+
+/* Arrow buttons */
+.car-arrow{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:48px;height:48px;border-radius:50%;
+  background:var(--white);
+  border:2px solid var(--green);
+  color:var(--green);
+  font-size:1.5rem;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;
+  box-shadow:0 4px 16px rgba(42,96,73,.2);
+  transition:all .2s;
+  z-index:5;
+  line-height:1;
+  padding:0;
+  font-family:Arial,sans-serif;
+}
+.car-arrow:hover{background:var(--green);color:#fff;box-shadow:0 6px 20px rgba(42,96,73,.35);}
+.car-arrow:disabled{opacity:.25;cursor:not-allowed;border-color:var(--gray-line);color:var(--text-light);box-shadow:none;}
+.car-arrow:disabled:hover{background:var(--white);color:var(--text-light);}
+.car-prev{left:0;}
+.car-next{right:0;}
+
+/* Review card */
+.rev-card{
+  background:var(--white);
+  border:1.5px solid var(--gray-line);
+  border-radius:14px;
+  padding:1.6rem;
+  display:flex;flex-direction:column;gap:.7rem;
+  flex-shrink:0;
+  min-height:220px;
+  transition:box-shadow .25s,border-color .25s;
+}
+.rev-card:hover{box-shadow:0 8px 28px rgba(42,96,73,.1);border-color:var(--accent);}
+.rev-top{display:flex;align-items:center;gap:.75rem;}
+.rev-av{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.82rem;color:#fff;flex-shrink:0;position:relative;}
+.rev-av-badge{position:absolute;bottom:-2px;right:-2px;width:17px;height:17px;border-radius:50%;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:.48rem;color:#fff;font-weight:800;}
+.rev-name{font-weight:700;font-size:.95rem;color:var(--text);}
+.rev-time{font-size:.74rem;color:var(--text-light);margin-top:.1rem;}
+.rev-stars{color:#fbbf24;font-size:.95rem;}
+.rev-body{font-size:.88rem;color:var(--text-mid);line-height:1.75;flex:1;font-style:italic;}
+.rev-tag{display:inline-block;background:var(--green-light);color:var(--green);font-size:.7rem;font-weight:700;padding:.2rem .6rem;border-radius:10px;font-style:normal;align-self:flex-start;}
+
+/* Dots */
+.car-dots{display:flex;justify-content:center;gap:.5rem;margin-top:1.4rem;}
+.car-dot{width:9px;height:9px;border-radius:50%;background:var(--gray-line);border:none;cursor:pointer;padding:0;transition:background .2s,transform .2s;}
+.car-dot.on{background:var(--green);transform:scale(1.25);}
+
+/* Mobile swipe hint */
+.swipe-hint{text-align:center;font-size:.74rem;color:var(--text-light);margin-top:.5rem;display:none;}
+
+/* CTA */
+.cta-band{background:var(--green);padding:5rem 0;text-align:center;}
+.cta-band h2{font-size:clamp(1.7rem,2.8vw,2.3rem);font-weight:800;color:#fff;margin-bottom:.7rem;}
+.cta-band p{color:rgba(255,255,255,.8);font-size:1rem;max-width:580px;margin:0 auto 2rem;}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.btn-white{background:#fff;color:var(--green);font-family:'Outfit',sans-serif;font-size:.95rem;font-weight:700;padding:1rem 2.2rem;border-radius:7px;text-decoration:none;display:inline-block;transition:transform .2s;}
+.btn-white:hover{transform:translateY(-2px);}
+.btn-outline{background:transparent;color:#fff;font-family:'Outfit',sans-serif;font-size:.95rem;font-weight:600;padding:1rem 2.2rem;border-radius:7px;text-decoration:none;border:2px solid rgba(255,255,255,.5);display:inline-block;transition:border-color .2s,background .2s;}
+.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.1);}
+
+/* Footer */
+.site-footer{background:var(--green-dark);color:rgba(255,255,255,.6);padding:2rem 0;font-size:.82rem;}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+.footer-inner a{color:rgba(255,255,255,.75);text-decoration:none;}
+
+/* RESPONSIVE */
+@media(max-width:1023px){
+  .nav-links,.nav-phone{display:none;}
+  .nav-hamburger{display:flex;}
+  .mob-phone-top{display:flex;}
+  .carousel{padding:0 44px;}
+  .car-arrow{width:40px;height:40px;font-size:1.2rem;}
+}
+@media(max-width:767px){
+  .util-bar{display:none;}
+  .page-hero{padding:3rem 0 2.5rem;}
+  .hero-stats{gap:1rem;}
+  .h-stat{min-width:90px;}
+  .h-stat-num{font-size:1.5rem;}
+
+  /* Platform badges — clean 2-col grid */
+  .badges-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:.6rem;
+  }
+  .platform-badge{
+    min-width:0;
+    padding:.75rem .9rem;
+    border-radius:10px;
+    gap:.55rem;
+    flex-direction:row;
+    align-items:center;
+  }
+  .pb-icon{width:36px;height:36px;font-size:.8rem;border-radius:8px;}
+  .pb-icon.google{font-size:1.1rem;}
+  .pb-info strong{font-size:.82rem;}
+  .pb-info span{font-size:.68rem;}
+  .pb-stars{font-size:.74rem;}
+  .pb-ext{font-size:.85rem;}
+
+  /* Tab strip — compact scrollable row */
+  .tab-strip{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    gap:.3rem;
+    padding-bottom:0;
+    scrollbar-width:none;
+  }
+  .tab-strip::-webkit-scrollbar{display:none;}
+  .rtab{font-size:.78rem;padding:.5rem .7rem;gap:.3rem;}
+  .rtab-icon{width:17px;height:17px;font-size:.55rem;}
+  .rtab-score{display:none;}
+
+  .carousel{padding:0 40px;}
+  .car-arrow{width:36px;height:36px;font-size:1.1rem;}
+  .swipe-hint{display:block;}
+  .rev-overall{flex-direction:column;align-items:flex-start;}
+  .cta-btns{flex-direction:column;align-items:center;}
+}
+
+/* ── Mobile carousel thumbnails ── */
+.car-thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.car-thumb {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color .2s, transform .2s;
+  font-family: 'Outfit', sans-serif;
+  opacity: 0.5;
+}
+.car-thumb.on {
+  border-color: var(--green);
+  opacity: 1;
+  transform: scale(1.15);
+}
+/* Desktop: hide thumbs, show grid */
+@media (min-width: 1024px) {
+  .car-thumbs { display: none; }
+  .car-arrow { display: none !important; }
+  .swipe-hint { display: none !important; }
+  .car-viewport { overflow: visible; }
+  .car-track {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+    transform: none !important;
+  }
+  .rev-card { width: auto !important; min-width: 0 !important; }
+}
+</style>
+<style>/* NAV_CSS_V41 */
+/* ══ UTILITY BAR ══ */
+.util-bar {
+  background: var(--green-dark);
+  color: rgba(255,255,255,0.75);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 0.45rem 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.util-bar a { color: rgba(255,255,255,0.75); text-decoration: none; transition: color .22s ease; }
+.util-bar a:hover { color: #fff; }
+.util-sep { color: rgba(255,255,255,0.2); }
+
+/* ══ SITE NAV ══ */
+.site-nav {
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.09);
+  border-bottom: 3px solid var(--green);
+}
+.nav-inner {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 16px;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.nav-logo-icon {
+  width: 42px; height: 42px;
+  background: var(--green);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.nav-logo-icon svg { width: 24px; height: 24px; }
+.nav-logo-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  display: block;
+  line-height: 1.2;
+}
+.nav-logo-sub {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  display: block;
+}
+.nav-spacer { flex: 1; }
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 0.1rem;
+}
+.nav-links > li { position: relative; }
+.nav-links > li > a {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--text-mid);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  transition: color .22s ease, background .22s ease;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+.nav-links > li > a:hover,
+.nav-links > li.active > a {
+  color: var(--green);
+  background: var(--green-light);
+}
+.chevron {
+  display: inline-block;
+  width: 9px; height: 9px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform .22s ease;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.nav-links > li:hover > a .chevron { transform: rotate(225deg) translateY(2px); }
+.nav-phone {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-mid);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: color .22s ease;
+}
+.nav-phone:hover { color: var(--green); }
+.nav-phone svg { width: 14px; height: 14px; flex-shrink: 0; }
+.nav-cta {
+  background: #e8a020;
+  color: #fff !important;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.84rem;
+  font-weight: 700 !important;
+  padding: 0.6rem 1.2rem !important;
+  border-radius: 5px !important;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background .22s ease, transform .22s ease, box-shadow .22s ease;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 10px rgba(232,160,32,0.28);
+  display: inline-block;
+}
+.nav-cta:hover {
+  background: #c8881a !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 18px rgba(232,160,32,0.38);
+}
+.mega-menu {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background: var(--white);
+  border: 1px solid var(--gray-line);
+  border-radius: 10px;
+  box-shadow: 0 16px 56px rgba(0,0,0,0.13);
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  min-width: 720px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  pointer-events: none;
+  z-index: 600;
+}
+.mega-menu::before {
+  content: '';
+  position: absolute;
+  top: -6px; left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 12px; height: 12px;
+  background: var(--white);
+  border-left: 1px solid var(--gray-line);
+  border-top: 1px solid var(--gray-line);
+}
+.nav-links > li:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+.mega-col {
+  padding: 0 1.2rem;
+  border-right: 1px solid var(--gray-line);
+}
+.mega-col:first-child { padding-left: 0; }
+.mega-col:last-child { padding-right: 0; border-right: none; }
+.mega-col-title {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--green-light);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  min-height: 28px;
+}
+.mega-col-title svg { width: 13px; height: 13px; flex-shrink: 0; }
+.mega-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.05rem; }
+.mega-col ul li a {
+  display: block;
+  color: var(--text-mid);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.38rem 0.5rem;
+  border-radius: 4px;
+  transition: color .22s ease, background .22s ease, padding-left .22s ease;
+}
+.mega-col ul li a:hover {
+  color: var(--green);
+  background: var(--green-light);
+  padding-left: 0.85rem;
+}
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 2px solid var(--gray-line);
+  background: none;
+  border-radius: 6px;
+  transition: border-color .2s, background .2s;
+}
+.nav-hamburger:hover { border-color: var(--green); background: var(--green-light); }
+.nav-hamburger span {
+  display: block;
+  width: 18px; height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform .25s ease, opacity .2s;
+}
+.nav-hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.mob-phone-top {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: var(--green);
+  background: var(--green-light);
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: background .2s, color .2s;
+}
+.mob-phone-top:hover { background: var(--green); color: #fff; }
+.mob-phone-top svg { flex-shrink: 0; }
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0; right: 0;
+  background: var(--white);
+  box-shadow: 0 8px 32px rgba(0,0,0,.12);
+  border-top: 2px solid var(--green);
+  z-index: 490;
+  max-height: calc(100vh - var(--nav-h));
+  overflow-y: auto;
+}
+.mobile-nav.is-open { display: block; }
+.mobile-nav-inner { padding: 10px 0; }
+.mobile-nav-inner ul { list-style: none; }
+.mobile-nav-inner > ul > li { border-bottom: 1px solid var(--gray-line); }
+.mobile-nav-inner > ul > li:last-child { border-bottom: none; }
+.mob-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 13px 20px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text);
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .15s, color .15s;
+}
+.mob-link:hover { background: var(--green-light); color: var(--green); }
+.mobile-nav-inner > ul > li > a.mob-link { display: flex; }
+.mob-chevron {
+  display: inline-block;
+  width: 9px; height: 9px;
+  border-right: 2px solid var(--text-light);
+  border-bottom: 2px solid var(--text-light);
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform .25s ease;
+  flex-shrink: 0;
+}
+.mob-link.open .mob-chevron { transform: rotate(225deg) translateY(2px); }
+.mob-sub-menu {
+  background: var(--off-white);
+  border-top: 1px solid var(--gray-line);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease;
+}
+.mob-sub-menu.open { max-height: 900px; }
+.mob-sub-group { padding: 0.8rem 1rem 0.4rem; }
+.mob-sub-group + .mob-sub-group { border-top: 1px solid var(--gray-line); }
+.mob-sub-group-title {
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--green-light);
+  margin-bottom: 0.4rem;
+}
+.mob-sub-group ul { list-style: none; }
+.mob-sub-group ul li a {
+  display: block;
+  color: var(--text-mid);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.4rem 0.25rem;
+  transition: color .22s;
+}
+.mob-sub-group ul li a:hover { color: var(--green); }
+.mob-cta-row .nav-cta { display: block !important; }
+.mob-cta-row {
+  padding: 0.9rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  border-top: 2px solid var(--gray-line);
+}
+.mob-phone-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-mid);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: color .22s;
+}
+.mob-phone-link:hover { color: var(--green); }
+/* Responsive */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .util-bar { display: none; }
+  .nav-links { display: none; }
+  .nav-phone { display: none; }
+  .nav-cta { display: none; }
+  .nav-hamburger { display: flex; }
+  .mob-phone-top { display: flex; }
+}
+@media (max-width: 767px) {
+  :root { --nav-h: 60px; }
+  .util-bar { display: none; }
+  .nav-links { display: none; }
+  .nav-phone { display: none; }
+  .nav-cta { display: none; }
+  .nav-hamburger { display: flex; }
+  .mob-phone-top { display: flex; }
+}
+</style>
+</head>
+<body>
+
+<div class="util-bar">
+  <span>&#128205; Serving Kane, DuPage &amp; DeKalb Counties, IL</span>
+  <span class="util-sep">|</span>
+  <span>Licensed #104.014799 &middot; Bonded &amp; Insured</span>
+  <span class="util-sep">|</span>
+  <span>Est. 1973 &middot; 100% Family Owned &amp; Operated</span>
+</div>
+
+<header class="site-nav" id="main-nav">
+  <div class="nav-inner">
+
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 3L2 10h2v9h6v-5h4v5h6v-9h2L12 3z"/>
+        </svg>
+      </div>
+      <div>
+        <span class="nav-logo-name">Countryside Roofing Inc.</span>
+        <span class="nav-logo-sub">Est. 1973 · 50+ Years of Experience</span>
+      </div>
+    </a>
+
+    <div class="nav-spacer"></div>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="index.html#services">Services <span class="chevron"></span></a>
+          <div class="mega-menu" role="region" aria-label="Services menu">
+            <div class="mega-col">
+              <div class="mega-col-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                Roofing Services
+              </div>
+              <ul>
+                <li><a href="index.html#services">Residential Roofing</a></li>
+                <li><a href="index.html#services">Commercial Roofing</a></li>
+                <li><a href="index.html#services">Multifamily Roofing</a></li>
+                <li><a href="index.html#services">Roof Replacement</a></li>
+                <li><a href="index.html#services">Roof Inspections</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Insurance Restoration
+              </div>
+              <ul>
+                <li><a href="index.html#services">Insurance Claim Assistance</a></li>
+                <li><a href="index.html#services">Storm Damage Restoration</a></li>
+                <li><a href="index.html#services">Hail &amp; Wind Damage Claims</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+                Exterior Renovation
+              </div>
+              <ul>
+                <li><a href="index.html#services">Siding</a></li>
+                <li><a href="index.html#services">Windows &amp; Doors</a></li>
+                <li><a href="index.html#services">Gutters &amp; Gutter Guards</a></li>
+                <li><a href="index.html#services">Outdoor Living</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="active"><a href="reviews.html">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <a href="tel:6303658887" class="nav-phone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 1.14 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+      </svg>
+      (630) 365-8887
+    </a>
+
+    <a href="index.html#contact" class="nav-cta">Get a Free Quote</a>
+
+    <a href="tel:6303658887" class="mob-phone-top" aria-label="Call us">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 1.14 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+      </svg>
+    </a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+
+  <!-- MOBILE DROPDOWN -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-inner">
+      <ul>
+        <li><a href="about.html" class="mob-link">About Us</a></li>
+        <li>
+          <button class="mob-link" id="mob-services-btn" aria-expanded="false" aria-controls="mob-services-sub">
+            Services
+            <span class="mob-chevron"></span>
+          </button>
+          <div class="mob-sub-menu" id="mob-services-sub">
+            <div class="mob-sub-group">
+              <div class="mob-sub-group-title">Roofing Services</div>
+              <ul>
+                <li><a href="index.html#services">Residential Roofing</a></li>
+                <li><a href="index.html#services">Commercial Roofing</a></li>
+                <li><a href="index.html#services">Multifamily Roofing</a></li>
+                <li><a href="index.html#services">Roof Replacement</a></li>
+                <li><a href="index.html#services">Roof Inspections</a></li>
+              </ul>
+            </div>
+            <div class="mob-sub-group">
+              <div class="mob-sub-group-title">Insurance Restoration</div>
+              <ul>
+                <li><a href="index.html#services">Insurance Claim Assistance</a></li>
+                <li><a href="index.html#services">Storm Damage Restoration</a></li>
+                <li><a href="index.html#services">Hail &amp; Wind Damage Claims</a></li>
+              </ul>
+            </div>
+            <div class="mob-sub-group">
+              <div class="mob-sub-group-title">Exterior Renovation</div>
+              <ul>
+                <li><a href="index.html#services">Siding</a></li>
+                <li><a href="index.html#services">Windows &amp; Doors</a></li>
+                <li><a href="index.html#services">Gutters &amp; Gutter Guards</a></li>
+                <li><a href="index.html#services">Outdoor Living</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="products.html" class="mob-link">Products</a></li>
+        <li><a href="gallery.html" class="mob-link">Gallery</a></li>
+        <li><a href="reviews.html" class="mob-link active">Reviews</a></li>
+        <li><a href="blog.html" class="mob-link">Blog</a></li>
+        <li>
+          <div class="mob-cta-row">
+            <a href="tel:6303658887" class="mob-phone-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 1.14 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              (630) 365-8887
+            </a>
+            <a href="index.html#contact" class="nav-cta" style="text-align:center; padding:0.8rem; font-size:0.9rem; display:block;">Get a Free Quote</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>&#8250;</span><span>Reviews</span></div>
+    <h1>What Our Customers <em>Say</em></h1>
+    <p>Verified reviews from homeowners across Kane, DuPage, and DeKalb Counties.</p>
+    <div class="hero-stats">
+      <div class="h-stat"><div class="h-stat-num">4.9&#9733;</div><div class="h-stat-lbl">Average Rating</div></div>
+      <div class="h-stat"><div class="h-stat-num">322+</div><div class="h-stat-lbl">Verified Reviews</div></div>
+      <div class="h-stat"><div class="h-stat-num">A+</div><div class="h-stat-lbl">BBB Rating</div></div>
+      <div class="h-stat"><div class="h-stat-num">65%</div><div class="h-stat-lbl">Referral Customers</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews-section">
+  <div class="container">
+
+    <div class="tab-strip">
+      <button class="rtab active" data-panel="all"><span class="rtab-icon all">ALL</span> All Reviews <span class="rtab-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rtab-score">4.9</span></button>
+      <button class="rtab" data-panel="google"><span class="rtab-icon google">G</span> Google <span class="rtab-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rtab-score">4.9</span></button>
+      <button class="rtab" data-panel="fb"><span class="rtab-icon fb">f</span> Facebook <span class="rtab-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rtab-score">4.7</span></button>
+      <button class="rtab" data-panel="angi"><span class="rtab-icon angi">A</span> Angi <span class="rtab-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rtab-score">4.8</span></button>
+      <button class="rtab" data-panel="bbb"><span class="rtab-icon bbb">B</span> BBB <span class="rtab-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rtab-score">A+</span></button>
+    </div>
+
+    <div class="rev-overall">
+      <div class="rev-overall-left">
+        <div class="rev-big-num" id="rev-num">4.9</div>
+        <div><div class="rev-stars-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-count" id="rev-count">Based on 322 reviews across all platforms</div></div>
+      </div>
+      <a href="https://www.google.com/search?q=Countryside+Roofing+Inc+Illinois+reviews" target="_blank" rel="noopener" class="rev-write-btn" id="rev-write-btn">&#9998; Leave Us a Review</a>
+    </div>
+
+    <!-- ALL panel -->
+    <div class="rev-panel active" id="panel-all">
+      <div class="carousel" id="car-all">
+        <button class="car-arrow car-prev" id="prev-all">&#8592;</button>
+        <div class="car-viewport">
+          <div class="car-track" id="track-all">
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#3a7a5c">MR<div class="rev-av-badge" style="background:#4285f4">G</div></div><div><div class="rev-name">Mark R.</div><div class="rev-time">3 months ago &middot; Elburn, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;The team was incredibly professional. They replaced our entire roof after a hail storm and the work was flawless. I always knew what was happening and when. Mike showed up on day one and checked in every single day.&rdquo;</div><span class="rev-tag">Roof Replacement</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#1877f2">SL<div class="rev-av-badge" style="background:#1877f2">f</div></div><div><div class="rev-name">Sandra L.</div><div class="rev-time">3 months ago &middot; Geneva, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;From the free estimate to the final clean-up, every step was handled professionally. They worked with our insurance seamlessly &mdash; I didn&rsquo;t have to make a single call myself. Would not use anyone else.&rdquo;</div><span class="rev-tag">Insurance Claim</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#ff6b35">TK<div class="rev-av-badge" style="background:#ff6b35">A</div></div><div><div class="rev-name">Tom K.</div><div class="rev-time">4 months ago &middot; St. Charles, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;I&rsquo;ve hired roofers before and never been impressed &mdash; until Countryside. They found issues two other companies missed and fixed everything at a fair price. Honest, thorough, and always on time.&rdquo;</div><span class="rev-tag">Roof Repair</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#003087">JW<div class="rev-av-badge" style="background:#003087">B</div></div><div><div class="rev-name">Jessie W.</div><div class="rev-time">4 months ago &middot; Batavia, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;This is the third roof we&rsquo;ve had installed and Countryside&rsquo;s work was no comparison to the first two. When they say they&rsquo;ll do something, it gets done correctly and on time. Customers for life.&rdquo;</div><span class="rev-tag">Roof Replacement</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#3a7a5c">HL<div class="rev-av-badge" style="background:#4285f4">G</div></div><div><div class="rev-name">Heather L.</div><div class="rev-time">4 months ago &middot; Elgin, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;They replaced our roof, gutters, and fixed interior ceiling damage. Cleanup was immaculate &mdash; you&rsquo;d never know they were there. Our neighbours keep asking who did our roof!&rdquo;</div><span class="rev-tag">Roof + Gutters</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#1877f2">RC<div class="rev-av-badge" style="background:#1877f2">f</div></div><div><div class="rev-name">Ronnie C.</div><div class="rev-time">5 months ago &middot; Sycamore, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;The project manager went above and beyond navigating both the insurance and mortgage company processes. Always returned calls within the hour. This is what customer service should look like.&rdquo;</div><span class="rev-tag">Storm Damage</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#ff6b35">LM<div class="rev-av-badge" style="background:#ff6b35">A</div></div><div><div class="rev-name">Linda M.</div><div class="rev-time">5 months ago &middot; DeKalb, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;Countryside installed our James Hardie siding and it completely transformed our home. Clean, professional, finished on schedule. The colour looks exactly like the sample &mdash; absolutely stunning.&rdquo;</div><span class="rev-tag">Hardie Siding</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#2a6049">GS<div class="rev-av-badge" style="background:#4285f4">G</div></div><div><div class="rev-name">Gary S.</div><div class="rev-time">6 months ago &middot; Geneva, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;We had 18 windows replaced with Simonton units. Carlos led the crew and was meticulous. Every window is perfectly level and sealed. Our energy bills dropped noticeably the very first month.&rdquo;</div><span class="rev-tag">Window Replacement</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#003087">RH<div class="rev-av-badge" style="background:#003087">B</div></div><div><div class="rev-name">Robert H.</div><div class="rev-time">8 months ago &middot; Naperville, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;Came highly recommended and exceeded every expectation. Honest pricing, zero surprises, and quality workmanship throughout. The A+ BBB rating is genuinely well-deserved.&rdquo;</div><span class="rev-tag">Roof Replacement</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#1877f2">PB<div class="rev-av-badge" style="background:#1877f2">f</div></div><div><div class="rev-name">Patricia B.</div><div class="rev-time">9 months ago &middot; Wheaton, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;Family-owned and it really shows. They care about every single job. My roof looks incredible and the price was very fair. I&rsquo;ve already referred three neighbours to Countryside.&rdquo;</div><span class="rev-tag">Roof Replacement</span></div>
+          </div>
+        </div>
+        <button class="car-arrow car-next" id="next-all">&#8594;</button>
+      </div>
+      <div class="car-dots" id="dots-all"></div>
+      <div class="swipe-hint">&#8592; Swipe or tap arrows to see more &#8594;</div>
+    </div>
+
+    <!-- GOOGLE panel -->
+    <div class="rev-panel" id="panel-google">
+      <div class="carousel" id="car-google">
+        <button class="car-arrow car-prev" id="prev-google">&#8592;</button>
+        <div class="car-viewport">
+          <div class="car-track" id="track-google">
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#3a7a5c">MR<div class="rev-av-badge" style="background:#4285f4">G</div></div><div><div class="rev-name">Mark R.</div><div class="rev-time">3 months ago &middot; Elburn, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;The team was incredibly professional. They replaced our entire roof after a hail storm and the work was flawless. I always knew what was happening and when.&rdquo;</div><span class="rev-tag">Roof Replacement</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#3a7a5c">HL<div class="rev-av-badge" style="background:#4285f4">G</div></div><div><div class="rev-name">Heather L.</div><div class="rev-time">4 months ago &middot; Elgin, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;They replaced our roof, gutters, and fixed interior ceiling damage. The cleanup was immaculate. Our neighbours keep asking who did our roof. Couldn&rsquo;t be happier!&rdquo;</div><span class="rev-tag">Roof + Gutters</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#2a6049">DM<div class="rev-av-badge" style="background:#4285f4">G</div></div><div><div class="rev-name">David M.</div><div class="rev-time">2 months ago &middot; Aurora, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;Outstanding work from start to finish. The crew was on time every day and left the site spotless. Highly recommend Countryside for any roofing needs.&rdquo;</div><span class="rev-tag">Roof Replacement</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#2a6049">GS<div class="rev-av-badge" style="background:#4285f4">G</div></div><div><div class="rev-name">Gary S.</div><div class="rev-time">6 months ago &middot; Geneva, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;We had 18 windows replaced with Simonton units. Every window is perfectly level and sealed. Our energy bills dropped noticeably. Carlos and his crew were meticulous.&rdquo;</div><span class="rev-tag">Window Replacement</span></div>
+          </div>
+        </div>
+        <button class="car-arrow car-next" id="next-google">&#8594;</button>
+      </div>
+      <div class="car-dots" id="dots-google"></div>
+      <div class="swipe-hint">&#8592; Swipe or tap arrows to see more &#8594;</div>
+    </div>
+
+    <!-- FACEBOOK panel -->
+    <div class="rev-panel" id="panel-fb">
+      <div class="carousel" id="car-fb">
+        <button class="car-arrow car-prev" id="prev-fb">&#8592;</button>
+        <div class="car-viewport">
+          <div class="car-track" id="track-fb">
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#1877f2">SL<div class="rev-av-badge" style="background:#1877f2">f</div></div><div><div class="rev-name">Sandra L.</div><div class="rev-time">3 months ago &middot; Geneva, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;From the free estimate to the final clean-up, every step was handled professionally. They worked with our insurance seamlessly. Would not use anyone else.&rdquo;</div><span class="rev-tag">Insurance Claim</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#1877f2">RC<div class="rev-av-badge" style="background:#1877f2">f</div></div><div><div class="rev-name">Ronnie C.</div><div class="rev-time">5 months ago &middot; Sycamore, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;The project manager went above and beyond helping us navigate both the insurance and mortgage company. Very professional and always returned calls quickly.&rdquo;</div><span class="rev-tag">Storm Damage</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#1877f2">PB<div class="rev-av-badge" style="background:#1877f2">f</div></div><div><div class="rev-name">Patricia B.</div><div class="rev-time">9 months ago &middot; Wheaton, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;Family-owned and it really shows. They care about every single job. My roof looks amazing and the price was very fair. I&rsquo;ve already referred three neighbours.&rdquo;</div><span class="rev-tag">Roof Replacement</span></div>
+          </div>
+        </div>
+        <button class="car-arrow car-next" id="next-fb">&#8594;</button>
+      </div>
+      <div class="car-dots" id="dots-fb"></div>
+      <div class="swipe-hint">&#8592; Swipe or tap arrows to see more &#8594;</div>
+    </div>
+
+    <!-- ANGI panel -->
+    <div class="rev-panel" id="panel-angi">
+      <div class="carousel" id="car-angi">
+        <button class="car-arrow car-prev" id="prev-angi">&#8592;</button>
+        <div class="car-viewport">
+          <div class="car-track" id="track-angi">
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#ff6b35">TK<div class="rev-av-badge" style="background:#ff6b35">A</div></div><div><div class="rev-name">Tom K.</div><div class="rev-time">4 months ago &middot; St. Charles, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;I&rsquo;ve hired roofers before and never been impressed &mdash; until Countryside. They found issues two other companies missed and fixed everything at a fair price.&rdquo;</div><span class="rev-tag">Roof Repair</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#ff6b35">LM<div class="rev-av-badge" style="background:#ff6b35">A</div></div><div><div class="rev-name">Linda M.</div><div class="rev-time">5 months ago &middot; DeKalb, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;Countryside installed our James Hardie siding and it completely transformed our home. Clean, professional, finished on schedule. The colour looks exactly like the sample.&rdquo;</div><span class="rev-tag">Hardie Siding</span></div>
+          </div>
+        </div>
+        <button class="car-arrow car-next" id="next-angi">&#8594;</button>
+      </div>
+      <div class="car-dots" id="dots-angi"></div>
+      <div class="swipe-hint">&#8592; Swipe or tap arrows &#8594;</div>
+    </div>
+
+    <!-- BBB panel -->
+    <div class="rev-panel" id="panel-bbb">
+      <div class="carousel" id="car-bbb">
+        <button class="car-arrow car-prev" id="prev-bbb">&#8592;</button>
+        <div class="car-viewport">
+          <div class="car-track" id="track-bbb">
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#003087">JW<div class="rev-av-badge" style="background:#003087">B</div></div><div><div class="rev-name">Jessie W.</div><div class="rev-time">4 months ago &middot; Batavia, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;This is the third roof we&rsquo;ve had installed and Countryside&rsquo;s work was no comparison to the first two. When they say they&rsquo;ll do something, it gets done correctly and on time.&rdquo;</div><span class="rev-tag">Roof Replacement</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#003087">RH<div class="rev-av-badge" style="background:#003087">B</div></div><div><div class="rev-name">Robert H.</div><div class="rev-time">8 months ago &middot; Naperville, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;Came highly recommended and exceeded every expectation. Honest pricing, zero surprises, quality workmanship. The A+ BBB rating is genuinely well-deserved.&rdquo;</div><span class="rev-tag">Roof Replacement</span></div>
+            <div class="rev-card"><div class="rev-top"><div class="rev-av" style="background:#003087">CN<div class="rev-av-badge" style="background:#003087">B</div></div><div><div class="rev-name">Carol N.</div><div class="rev-time">1 year ago &middot; Streamwood, IL</div></div></div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-body">&ldquo;As a widow living alone I was nervous about hiring a contractor. Countryside put me completely at ease &mdash; upfront pricing, clear timeline, and they treated my home with real respect.&rdquo;</div><span class="rev-tag">Storm Damage</span></div>
+          </div>
+        </div>
+        <button class="car-arrow car-next" id="next-bbb">&#8594;</button>
+      </div>
+      <div class="car-dots" id="dots-bbb"></div>
+      <div class="swipe-hint">&#8592; Swipe or tap arrows to see more &#8594;</div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to Experience the Countryside Difference?</h2>
+    <p>Join thousands of Illinois homeowners who trust us with their most important investment. Get your free, no-pressure inspection today.</p>
+    <div class="cta-btns">
+      <a href="index.html#contact" class="btn-white">&#128203; Get a Free Quote</a>
+      <a href="tel:6303658887" class="btn-outline">&#128222; (630) 365-8887</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span>&copy; 2026 Countryside Roofing Inc. &middot; Licensed #104.014799 &middot; Bonded &amp; Insured</span>
+      <span>Kane, DuPage &amp; DeKalb Counties, IL &middot; <a href="tel:6303658887">(630) 365-8887</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ── NAV ── */
+var ham = document.getElementById('hamburger');
+var mob = document.getElementById('mobile-nav');
+ham.addEventListener('click', function() {
+  var o = mob.classList.toggle('is-open');
+  ham.classList.toggle('is-open', o);
+});
+mob.querySelectorAll('a').forEach(function(l) {
+  l.addEventListener('click', function() {
+    mob.classList.remove('is-open');
+    ham.classList.remove('is-open');
+  });
+});
+
+/* ── PLATFORM LINKS per tab ── */
+var platformLinks = {
+  all:    'https://www.google.com/search?q=Countryside+Roofing+Inc+Illinois+reviews',
+  google: 'https://www.google.com/search?q=Countryside+Roofing+Inc+Illinois+reviews',
+  fb:     'https://www.facebook.com/CountrysideRoofingInc/reviews',
+  angi:   'https://www.angi.com/companylist/us/il/countryside-roofing.htm',
+  bbb:    'https://www.bbb.org/us/il/streamwood/profile/roofing-contractors/countryside-roofing-inc-0654-88015510'
+};
+
+/* ── isMobile ── */
+function isMobile() { return window.innerWidth < 1024; }
+
+/* ── CAROUSEL (mobile only) ── */
+var cars = {};
+
+function setupCar(id) {
+  var track    = document.getElementById('track-' + id);
+  var viewport = track ? track.parentElement : null;
+  if (!track || !viewport) return;
+  var cards = Array.from(track.querySelectorAll('.rev-card'));
+  var n     = cards.length;
+  var gap   = 16;
+
+  if (isMobile()) {
+    /* ── MOBILE: 1 card at a time carousel ── */
+    track.style.display  = 'flex';
+    track.style.flexWrap = 'nowrap';
+
+    var cardW = viewport.offsetWidth;
+    cards.forEach(function(c) {
+      c.style.width     = cardW + 'px';
+      c.style.minWidth  = cardW + 'px';
+      c.style.flexShrink = '0';
+    });
+
+    var maxPage = n - 1;
+    if (!cars[id]) cars[id] = { page: 0 };
+    cars[id].page    = Math.min(cars[id].page, maxPage);
+    cars[id].maxPage = maxPage;
+    cars[id].cardW   = cardW;
+    cars[id].gap     = 0;
+    cars[id].n       = n;
+    cars[id].pp      = 1;
+
+    // show arrows on mobile
+    var prev = document.getElementById('prev-' + id);
+    var next = document.getElementById('next-' + id);
+    if (prev) prev.style.display = '';
+    if (next) next.style.display = '';
+
+    // build thumbnail dots
+    var dotsEl = document.getElementById('dots-' + id);
+    dotsEl.innerHTML = '';
+    dotsEl.className = 'car-thumbs';
+    cards.forEach(function(card, idx) {
+      (function(i) {
+        var dot = document.createElement('button');
+        dot.className = 'car-thumb' + (i === 0 ? ' on' : '');
+        dot.setAttribute('aria-label', 'Review ' + (i + 1));
+        // Extract initials from avatar for thumb
+        var av = card.querySelector('.rev-av');
+        var badge = av ? av.querySelector('.rev-av-badge') : null;
+        var avBg  = av ? av.style.background : '#2a6049';
+        dot.style.background = avBg;
+        dot.textContent = av ? av.textContent.replace(badge ? badge.textContent : '', '').trim().slice(0,2) : (i+1);
+        dot.addEventListener('click', function() { goPage(id, i); });
+        dotsEl.appendChild(dot);
+      })(idx);
+    });
+
+    renderCar(id);
+
+  } else {
+    /* ── DESKTOP: static grid — no carousel ── */
+    track.style.display       = 'grid';
+    track.style.gridTemplateColumns = 'repeat(3, 1fr)';
+    track.style.gap           = '1.5rem';
+    track.style.transform     = 'none';
+    track.style.flexWrap      = '';
+
+    cards.forEach(function(c) {
+      c.style.width    = '';
+      c.style.minWidth = '';
+      c.style.flexShrink = '';
+    });
+
+    // hide arrows and dots on desktop
+    var prev = document.getElementById('prev-' + id);
+    var next = document.getElementById('next-' + id);
+    if (prev) prev.style.display = 'none';
+    if (next) next.style.display = 'none';
+    var dotsEl = document.getElementById('dots-' + id);
+    dotsEl.innerHTML = '';
+  }
+}
+
+function renderCar(id) {
+  if (!isMobile()) return;
+  var s     = cars[id];
+  if (!s) return;
+  var track = document.getElementById('track-' + id);
+  var offset = s.page * s.cardW;
+  track.style.transform = 'translateX(-' + offset + 'px)';
+
+  // update thumbs
+  var thumbs = document.querySelectorAll('#dots-' + id + ' .car-thumb');
+  thumbs.forEach(function(d, i) { d.classList.toggle('on', i === s.page); });
+
+  // arrows
+  var prev = document.getElementById('prev-' + id);
+  var next = document.getElementById('next-' + id);
+  if (prev) prev.disabled = (s.page === 0);
+  if (next) next.disabled = (s.page >= s.maxPage);
+}
+
+function goPage(id, p) {
+  if (!cars[id]) return;
+  cars[id].page = Math.max(0, Math.min(cars[id].maxPage, p));
+  renderCar(id);
+}
+
+// Wire up arrows
+['all','google','fb','angi','bbb'].forEach(function(id) {
+  var prev = document.getElementById('prev-' + id);
+  var next = document.getElementById('next-' + id);
+  if (prev) prev.addEventListener('click', function() { goPage(id, cars[id].page - 1); });
+  if (next) next.addEventListener('click', function() { goPage(id, cars[id].page + 1); });
+});
+
+// Touch swipe
+function addSwipe(id) {
+  var vp = document.querySelector('#car-' + id + ' .car-viewport');
+  if (!vp) return;
+  var startX = 0;
+  vp.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; }, { passive: true });
+  vp.addEventListener('touchend', function(e) {
+    if (!isMobile()) return;
+    var dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 40) goPage(id, cars[id].page + (dx < 0 ? 1 : -1));
+  }, { passive: true });
+}
+
+var ALL_IDS = ['all','google','fb','angi','bbb'];
+ALL_IDS.forEach(function(id) { addSwipe(id); });
+setupCar('all');
+
+// Resize
+var resizeTimer;
+window.addEventListener('resize', function() {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(function() {
+    ALL_IDS.forEach(function(id) {
+      var panel = document.getElementById('panel-' + id);
+      if (panel && panel.classList.contains('active')) setupCar(id);
+    });
+  }, 150);
+});
+
+/* ── TAB SWITCHER ── */
+var tabMeta = {
+  all:    { num: '4.9', count: 'Based on 322 reviews across all platforms' },
+  google: { num: '4.9', count: 'Based on 214 Google reviews' },
+  fb:     { num: '4.7', count: 'Based on 68 Facebook reviews' },
+  angi:   { num: '4.8', count: 'Based on 29 Angi reviews' },
+  bbb:    { num: 'A+',  count: 'BBB Accredited Business · 11 reviews' }
+};
+
+document.querySelectorAll('.rtab').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var id = btn.getAttribute('data-panel');
+    document.querySelectorAll('.rtab').forEach(function(t) { t.classList.remove('active'); });
+    btn.classList.add('active');
+    document.querySelectorAll('.rev-panel').forEach(function(p) { p.classList.remove('active'); });
+    var panel = document.getElementById('panel-' + id);
+    panel.classList.add('active');
+    document.getElementById('rev-num').textContent   = tabMeta[id].num;
+    document.getElementById('rev-count').textContent = tabMeta[id].count;
+    // Update "Leave a Review" link
+    var writeBtn = document.getElementById('rev-write-btn');
+    if (writeBtn) writeBtn.href = platformLinks[id];
+    setTimeout(function() { setupCar(id); }, 20);
+  });
+});
+</script>
+</body>
+</html>

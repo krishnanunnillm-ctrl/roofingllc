@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | Countryside Roofing Inc. — Illinois' Trusted Roofing Experts</title>
+<meta name="description" content="Browse roofing, siding and window products installed by Countryside Roofing Inc. CertainTeed SELECT ShingleMaster™ & Simonton Preferred Installer. Kane, DuPage & DeKalb Counties, IL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --green:       #2a6049;
+  --green-dark:  #1c4434;
+  --green-mid:   #3a7a5c;
+  --green-light: #e8f4ee;
+  --accent:      #4caf7d;
+  --gold:        #e8a020;
+  --gold-dark:   #c8881a;
+  --white:       #ffffff;
+  --off-white:   #f7f9f7;
+  --gray-bg:     #f4f6f4;
+  --gray-line:   #e5e9e6;
+  --text:        #1a2820;
+  --text-mid:    #4a5e54;
+  --text-light:  #7a8f84;
+  --max-w:       1400px;
+  --nav-h:       68px;
+}
+
+body { font-family: 'Outfit', sans-serif; font-size: 16px; line-height: 1.65; color: var(--text); background: var(--off-white); overflow-x: hidden; }
+
+/* ══ UTIL BAR ══ */
+.util-bar { background: var(--green-dark); color: rgba(255,255,255,0.75); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.04em; padding: 0.45rem 16px; display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+.util-sep { color: rgba(255,255,255,0.2); }
+
+/* ══ SITE NAV ══ */
+.site-nav { background: var(--white); position: sticky; top: 0; z-index: 500; box-shadow: 0 2px 24px rgba(0,0,0,0.09); border-bottom: 3px solid var(--green); }
+.nav-inner { width: 100%; max-width: var(--max-w); margin: 0 auto; padding: 0 16px; height: var(--nav-h); display: flex; align-items: center; gap: 1rem; }
+.nav-logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; flex-shrink: 0; }
+.nav-logo-icon { width: 42px; height: 42px; background: var(--green); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.nav-logo-icon svg { width: 24px; height: 24px; }
+.nav-logo-name { font-size: 1.05rem; font-weight: 700; color: var(--text); display: block; line-height: 1.2; }
+.nav-logo-sub { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; color: var(--text-light); display: block; }
+.nav-spacer { flex: 1; }
+.nav-links { display: flex; list-style: none; align-items: center; gap: 0.1rem; }
+.nav-links > li { position: relative; }
+.nav-links > li > a { display: flex; align-items: center; gap: 0.3rem; color: var(--text-mid); text-decoration: none; font-size: 0.875rem; font-weight: 600; padding: 0.5rem 0.7rem; border-radius: 5px; transition: color .22s, background .22s; white-space: nowrap; }
+.nav-links > li > a:hover, .nav-links > li.active > a { color: var(--green); background: var(--green-light); }
+.nav-links > li.active > a { font-weight: 700; }
+.chevron { display: inline-block; width: 9px; height: 9px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform .22s; flex-shrink: 0; margin-top: 1px; }
+.nav-links > li:hover > a .chevron { transform: rotate(225deg) translateY(2px); }
+.nav-phone { display: flex; align-items: center; gap: 0.4rem; color: var(--text-mid); text-decoration: none; font-size: 0.875rem; font-weight: 700; white-space: nowrap; flex-shrink: 0; transition: color .22s; }
+.nav-phone:hover { color: var(--green); }
+.nav-phone svg { width: 14px; height: 14px; flex-shrink: 0; }
+.nav-cta { background: var(--gold); color: #fff !important; font-family: 'Outfit', sans-serif; font-size: 0.84rem; font-weight: 700 !important; padding: 0.6rem 1.2rem !important; border-radius: 5px !important; text-decoration: none; white-space: nowrap; flex-shrink: 0; transition: background .22s, transform .22s, box-shadow .22s; box-shadow: 0 2px 10px rgba(232,160,32,0.28); display: inline-block; }
+.nav-cta:hover { background: var(--gold-dark) !important; transform: translateY(-1px); box-shadow: 0 4px 18px rgba(232,160,32,0.38); }
+
+/* Mega menu */
+.mega-menu { position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%) translateY(6px); background: var(--white); border: 1px solid var(--gray-line); border-radius: 10px; box-shadow: 0 16px 56px rgba(0,0,0,0.13); padding: 1.5rem; display: grid; grid-template-columns: repeat(3,1fr); gap: 0; min-width: 720px; opacity: 0; visibility: hidden; transition: opacity .2s, transform .2s, visibility .2s; pointer-events: none; z-index: 600; }
+.mega-menu::before { content: ''; position: absolute; top: -6px; left: 50%; transform: translateX(-50%) rotate(45deg); width: 12px; height: 12px; background: var(--white); border-left: 1px solid var(--gray-line); border-top: 1px solid var(--gray-line); }
+.nav-links > li:hover .mega-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); pointer-events: auto; }
+.mega-col { padding: 0 1.2rem; border-right: 1px solid var(--gray-line); }
+.mega-col:first-child { padding-left: 0; }
+.mega-col:last-child { padding-right: 0; border-right: none; }
+.mega-col-title { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green); margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--green-light); display: flex; align-items: center; gap: 0.4rem; white-space: nowrap; min-height: 28px; }
+.mega-col-title svg { width: 13px; height: 13px; flex-shrink: 0; }
+.mega-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.05rem; }
+.mega-col ul li a { display: block; color: var(--text-mid); text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 0.38rem 0.5rem; border-radius: 4px; transition: color .22s, background .22s, padding-left .22s; }
+.mega-col ul li a:hover { color: var(--green); background: var(--green-light); padding-left: 0.85rem; }
+
+/* Hamburger */
+.nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 0.5rem; border: 2px solid var(--gray-line); background: none; border-radius: 6px; transition: border-color .2s, background .2s; }
+.nav-hamburger:hover { border-color: var(--green); background: var(--green-light); }
+.nav-hamburger span { display: block; width: 18px; height: 2px; background: var(--text); border-radius: 2px; transition: transform .25s, opacity .2s; }
+.nav-hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.mob-phone-top { display: none; align-items: center; gap: 5px; color: var(--green); font-size: 0.78rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+
+/* Mobile nav */
+.mobile-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); box-shadow: 0 8px 32px rgba(0,0,0,.12); border-top: 2px solid var(--green); z-index: 490; max-height: calc(100vh - var(--nav-h)); overflow-y: auto; }
+.mobile-nav.is-open { display: block; }
+.mobile-nav-inner { padding: 10px 0; }
+.mobile-nav-inner ul { list-style: none; }
+.mobile-nav-inner > ul > li { border-bottom: 1px solid var(--gray-line); }
+.mobile-nav-inner > ul > li:last-child { border-bottom: none; }
+.mob-link { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 13px 20px; font-family: 'Outfit', sans-serif; font-size: 0.92rem; font-weight: 600; color: var(--text); background: none; border: none; text-align: left; cursor: pointer; text-decoration: none; transition: background .15s, color .15s; }
+.mob-link:hover, .mob-link.active { background: var(--green-light); color: var(--green); }
+.mobile-nav-inner > ul > li > a.mob-link { display: flex; }
+.mob-chevron { display: inline-block; width: 9px; height: 9px; border-right: 2px solid var(--text-light); border-bottom: 2px solid var(--text-light); transform: rotate(45deg) translateY(-2px); transition: transform .25s; flex-shrink: 0; }
+.mob-link.open .mob-chevron { transform: rotate(225deg) translateY(2px); }
+.mob-sub-menu { background: var(--off-white); border-top: 1px solid var(--gray-line); max-height: 0; overflow: hidden; transition: max-height .3s; }
+.mob-sub-menu.open { max-height: 900px; }
+.mob-sub-group { padding: 0.8rem 1rem 0.4rem; }
+.mob-sub-group + .mob-sub-group { border-top: 1px solid var(--gray-line); }
+.mob-sub-group-title { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green); padding-bottom: 0.4rem; border-bottom: 2px solid var(--green-light); margin-bottom: 0.4rem; }
+.mob-sub-group ul { list-style: none; }
+.mob-sub-group ul li a { display: block; color: var(--text-mid); text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 0.4rem 0.25rem; transition: color .22s; }
+.mob-sub-group ul li a:hover { color: var(--green); }
+.mob-cta-row { padding: 0.9rem 1rem 1rem; display: flex; flex-direction: column; gap: 0.65rem; border-top: 2px solid var(--gray-line); }
+
+/* ══ PAGE HERO ══ */
+.page-hero { background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 100%); padding: 5rem 0 4.5rem; position: relative; overflow: hidden; }
+.page-hero::before { content: ''; position: absolute; right: -80px; top: -80px; width: 420px; height: 420px; border-radius: 50%; background: rgba(255,255,255,.04); pointer-events: none; }
+.page-hero::after { content: ''; position: absolute; left: -60px; bottom: -60px; width: 300px; height: 300px; border-radius: 50%; background: rgba(0,0,0,.06); pointer-events: none; }
+.page-hero-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+.breadcrumb { font-size: 0.8rem; color: rgba(255,255,255,0.55); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.4rem; }
+.breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; transition: color .2s; }
+.breadcrumb a:hover { color: #fff; }
+.breadcrumb span { color: rgba(255,255,255,0.35); }
+.page-hero h1 { font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 1rem; }
+.page-hero h1 em { font-style: normal; color: var(--accent); }
+.page-hero p { color: rgba(255,255,255,0.8); font-size: 1.05rem; line-height: 1.75; max-width: 640px; }
+.hero-stats { display: flex; gap: 3rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.15); flex-wrap: wrap; }
+.h-stat-num { font-size: 2rem; font-weight: 800; color: var(--accent); line-height: 1; }
+.h-stat-lbl { font-size: 0.78rem; color: rgba(255,255,255,.65); margin-top: 0.2rem; }
+
+/* ══ INTRO BAND ══ */
+.intro-band { background: var(--white); padding: 2.5rem 0 0; }
+.intro-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px 2rem; border-bottom: 2px solid var(--gray-line); }
+.intro-inner p { color: var(--text-mid); font-size: 1rem; line-height: 1.8; max-width: 860px; }
+
+/* ══ PILL TABS ══ */
+.tab-pills {
+  display: flex; gap: 0.6rem;
+  overflow-x: auto; flex-wrap: nowrap;
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.25rem;
+}
+.tab-pills::-webkit-scrollbar { display: none; }
+.tab-pill {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  padding: 0.55rem 1.1rem;
+  font-family: 'Outfit', sans-serif; font-size: 0.88rem; font-weight: 600;
+  color: var(--text-mid); background: var(--gray-bg);
+  border: 1.5px solid var(--gray-line); border-radius: 30px;
+  cursor: pointer; transition: all .2s; white-space: nowrap; flex-shrink: 0;
+}
+.tab-pill:hover { border-color: var(--green); color: var(--green); background: var(--green-light); }
+.tab-pill.active { background: var(--green); color: #fff; border-color: var(--green); font-weight: 700; box-shadow: 0 3px 12px rgba(42,96,73,.25); }
+.tab-pill-ct { background: rgba(255,255,255,.25); color: #fff; font-size: 0.65rem; font-weight: 700; padding: 0.1rem 0.45rem; border-radius: 10px; }
+.tab-pill:not(.active) .tab-pill-ct { background: var(--green-light); color: var(--green); }
+
+/* ══ PRODUCT SECTIONS ══ */
+.products-section { display: none; padding: 3rem 0 5rem; background: var(--gray-bg); }
+.products-section.active { display: block; }
+.section-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+/* Section heading */
+.sec-hd { margin-bottom: 2.5rem; }
+.sec-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--green); display: block; margin-bottom: 0.5rem; }
+.sec-title { font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 800; color: var(--text); margin-bottom: 0.6rem; }
+.sec-sub { color: var(--text-mid); font-size: 0.95rem; line-height: 1.7; max-width: 740px; }
+
+/* ══ PRODUCT GRID ══ */
+.prod-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; }
+
+.prod-card { background: var(--white); border: 1.5px solid var(--gray-line); border-radius: 14px; overflow: hidden; transition: box-shadow .25s, transform .2s, border-color .25s; display: flex; flex-direction: column; }
+.prod-card:hover { box-shadow: 0 16px 48px rgba(42,96,73,.12); transform: translateY(-4px); border-color: var(--accent); }
+.prod-card.featured { border-color: var(--green); box-shadow: 0 4px 24px rgba(42,96,73,.12); }
+
+/* Logo area */
+.card-logo { height: 100px; background: var(--gray-bg); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--gray-line); padding: 1rem; }
+.card-logo svg { max-width: 180px; max-height: 68px; }
+
+.card-body { padding: 1.6rem; flex: 1; display: flex; flex-direction: column; }
+.card-name { font-weight: 800; font-size: 1.05rem; color: var(--text); margin-bottom: 0.2rem; }
+.card-tagline { font-size: 0.78rem; font-weight: 600; color: var(--green); margin-bottom: 0.8rem; letter-spacing: 0.03em; }
+.card-desc { font-size: 0.87rem; color: var(--text-mid); line-height: 1.7; flex: 1; }
+
+.card-features { list-style: none; margin: 1.2rem 0; display: flex; flex-direction: column; gap: 0.45rem; }
+.card-features li { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.82rem; color: var(--text-mid); }
+.card-features li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; margin-top: 0.05rem; }
+
+.card-footer { padding: 1.2rem 1.6rem; background: var(--gray-bg); border-top: 1px solid var(--gray-line); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.warranty-badge { display: flex; align-items: center; gap: 0.4rem; font-size: 0.78rem; font-weight: 700; color: var(--green); }
+.warranty-badge span { background: var(--green-light); color: var(--green); padding: 0.2rem 0.6rem; border-radius: 20px; font-size: 0.72rem; }
+.learn-link { font-size: 0.82rem; font-weight: 600; color: var(--green); text-decoration: none; display: flex; align-items: center; gap: 0.25rem; transition: gap .2s; }
+.learn-link:hover { gap: 0.5rem; }
+
+.featured-badge { background: var(--green); color: #fff; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 0 0 6px 6px; display: inline-block; margin-bottom: 0.3rem; }
+
+/* Comparison note */
+.comparison-note { background: var(--green-light); border: 1px solid rgba(42,96,73,.2); border-radius: 12px; padding: 1.5rem 2rem; margin-top: 3rem; display: flex; align-items: flex-start; gap: 1.2rem; }
+.note-icon { font-size: 1.8rem; flex-shrink: 0; margin-top: 0.1rem; }
+.note-body strong { font-weight: 700; color: var(--text); font-size: 0.95rem; display: block; margin-bottom: 0.3rem; }
+.note-body span { color: var(--text-mid); font-size: 0.87rem; line-height: 1.7; }
+
+/* ══ CTA BANNER ══ */
+.cta-banner { background: var(--green); padding: 4.5rem 0; text-align: center; }
+.cta-inner { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+.cta-inner h2 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 800; color: #fff; margin-bottom: 0.7rem; }
+.cta-inner p { color: rgba(255,255,255,.8); margin-bottom: 2rem; line-height: 1.75; }
+.btn-white { background: #fff; color: var(--green); padding: 1rem 2.2rem; border-radius: 6px; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-block; transition: transform .2s, box-shadow .2s; }
+.btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+.btn-outline-white { background: transparent; color: #fff; padding: 1rem 2.2rem; border-radius: 6px; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 0.95rem; text-decoration: none; border: 2px solid rgba(255,255,255,.5); display: inline-block; margin-left: 1rem; transition: border-color .2s, background .2s; }
+.btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,.1); }
+
+/* ══ FOOTER ══ */
+.site-footer { background: var(--green-dark); color: rgba(255,255,255,0.65); padding: 2rem 0; font-size: 0.82rem; }
+.footer-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.footer-inner a { color: rgba(255,255,255,0.75); text-decoration: none; transition: color .2s; }
+.footer-inner a:hover { color: #fff; }
+
+/* ══ RESPONSIVE ══ */
+@media (max-width: 1023px) {
+  .nav-links { display: none; }
+  .nav-phone { display: none; }
+  .nav-hamburger { display: flex; }
+  .mob-phone-top { display: flex; }
+  .prod-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 767px) {
+  .util-bar { display: none; }
+  .page-hero { padding: 3.5rem 0 3rem; }
+  .hero-stats { gap: 1.5rem; }
+  .prod-grid { grid-template-columns: 1fr; }
+  .btn-outline-white { margin-left: 0; margin-top: 0.75rem; display: block; text-align: center; }
+  .comparison-note { flex-direction: column; }
+}
+</style>
+<style>/* NAV_CSS_V41 */
+/* ══ UTILITY BAR ══ */
+.util-bar {
+  background: var(--green-dark);
+  color: rgba(255,255,255,0.75);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 0.45rem 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.util-bar a { color: rgba(255,255,255,0.75); text-decoration: none; transition: color .22s ease; }
+.util-bar a:hover { color: #fff; }
+.util-sep { color: rgba(255,255,255,0.2); }
+
+/* ══ SITE NAV ══ */
+.site-nav {
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.09);
+  border-bottom: 3px solid var(--green);
+}
+.nav-inner {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 16px;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.nav-logo-icon {
+  width: 42px; height: 42px;
+  background: var(--green);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.nav-logo-icon svg { width: 24px; height: 24px; }
+.nav-logo-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  display: block;
+  line-height: 1.2;
+}
+.nav-logo-sub {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  display: block;
+}
+.nav-spacer { flex: 1; }
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 0.1rem;
+}
+.nav-links > li { position: relative; }
+.nav-links > li > a {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--text-mid);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  transition: color .22s ease, background .22s ease;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+.nav-links > li > a:hover,
+.nav-links > li.active > a {
+  color: var(--green);
+  background: var(--green-light);
+}
+.chevron {
+  display: inline-block;
+  width: 9px; height: 9px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform .22s ease;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.nav-links > li:hover > a .chevron { transform: rotate(225deg) translateY(2px); }
+.nav-phone {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-mid);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: color .22s ease;
+}
+.nav-phone:hover { color: var(--green); }
+.nav-phone svg { width: 14px; height: 14px; flex-shrink: 0; }
+.nav-cta {
+  background: #e8a020;
+  color: #fff !important;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.84rem;
+  font-weight: 700 !important;
+  padding: 0.6rem 1.2rem !important;
+  border-radius: 5px !important;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background .22s ease, transform .22s ease, box-shadow .22s ease;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 10px rgba(232,160,32,0.28);
+  display: inline-block;
+}
+.nav-cta:hover {
+  background: #c8881a !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 18px rgba(232,160,32,0.38);
+}
+.mega-menu {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background: var(--white);
+  border: 1px solid var(--gray-line);
+  border-radius: 10px;
+  box-shadow: 0 16px 56px rgba(0,0,0,0.13);
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  min-width: 720px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  pointer-events: none;
+  z-index: 600;
+}
+.mega-menu::before {
+  content: '';
+  position: absolute;
+  top: -6px; left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 12px; height: 12px;
+  background: var(--white);
+  border-left: 1px solid var(--gray-line);
+  border-top: 1px solid var(--gray-line);
+}
+.nav-links > li:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+.mega-col {
+  padding: 0 1.2rem;
+  border-right: 1px solid var(--gray-line);
+}
+.mega-col:first-child { padding-left: 0; }
+.mega-col:last-child { padding-right: 0; border-right: none; }
+.mega-col-title {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--green-light);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  min-height: 28px;
+}
+.mega-col-title svg { width: 13px; height: 13px; flex-shrink: 0; }
+.mega-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.05rem; }
+.mega-col ul li a {
+  display: block;
+  color: var(--text-mid);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.38rem 0.5rem;
+  border-radius: 4px;
+  transition: color .22s ease, background .22s ease, padding-left .22s ease;
+}
+.mega-col ul li a:hover {
+  color: var(--green);
+  background: var(--green-light);
+  padding-left: 0.85rem;
+}
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 2px solid var(--gray-line);
+  background: none;
+  border-radius: 6px;
+  transition: border-color .2s, background .2s;
+}
+.nav-hamburger:hover { border-color: var(--green); background: var(--green-light); }
+.nav-hamburger span {
+  display: block;
+  width: 18px; height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform .25s ease, opacity .2s;
+}
+.nav-hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.mob-phone-top {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: var(--green);
+  background: var(--green-light);
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: background .2s, color .2s;
+}
+.mob-phone-top:hover { background: var(--green); color: #fff; }
+.mob-phone-top svg { flex-shrink: 0; }
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0; right: 0;
+  background: var(--white);
+  box-shadow: 0 8px 32px rgba(0,0,0,.12);
+  border-top: 2px solid var(--green);
+  z-index: 490;
+  max-height: calc(100vh - var(--nav-h));
+  overflow-y: auto;
+}
+.mobile-nav.is-open { display: block; }
+.mobile-nav-inner { padding: 10px 0; }
+.mobile-nav-inner ul { list-style: none; }
+.mobile-nav-inner > ul > li { border-bottom: 1px solid var(--gray-line); }
+.mobile-nav-inner > ul > li:last-child { border-bottom: none; }
+.mob-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 13px 20px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text);
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .15s, color .15s;
+}
+.mob-link:hover { background: var(--green-light); color: var(--green); }
+.mobile-nav-inner > ul > li > a.mob-link { display: flex; }
+.mob-chevron {
+  display: inline-block;
+  width: 9px; height: 9px;
+  border-right: 2px solid var(--text-light);
+  border-bottom: 2px solid var(--text-light);
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform .25s ease;
+  flex-shrink: 0;
+}
+.mob-link.open .mob-chevron { transform: rotate(225deg) translateY(2px); }
+.mob-sub-menu {
+  background: var(--off-white);
+  border-top: 1px solid var(--gray-line);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease;
+}
+.mob-sub-menu.open { max-height: 900px; }
+.mob-sub-group { padding: 0.8rem 1rem 0.4rem; }
+.mob-sub-group + .mob-sub-group { border-top: 1px solid var(--gray-line); }
+.mob-sub-group-title {
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--green-light);
+  margin-bottom: 0.4rem;
+}
+.mob-sub-group ul { list-style: none; }
+.mob-sub-group ul li a {
+  display: block;
+  color: var(--text-mid);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.4rem 0.25rem;
+  transition: color .22s;
+}
+.mob-sub-group ul li a:hover { color: var(--green); }
+.mob-cta-row .nav-cta { display: block !important; }
+.mob-cta-row {
+  padding: 0.9rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  border-top: 2px solid var(--gray-line);
+}
+.mob-phone-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-mid);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: color .22s;
+}
+.mob-phone-link:hover { color: var(--green); }
+/* Responsive */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .util-bar { display: none; }
+  .nav-links { display: none; }
+  .nav-phone { display: none; }
+  .nav-cta { display: none; }
+  .nav-hamburger { display: flex; }
+  .mob-phone-top { display: flex; }
+}
+@media (max-width: 767px) {
+  :root { --nav-h: 60px; }
+  .util-bar { display: none; }
+  .nav-links { display: none; }
+  .nav-phone { display: none; }
+  .nav-cta { display: none; }
+  .nav-hamburger { display: flex; }
+  .mob-phone-top { display: flex; }
+}
+</style>
+</head>
+<body>
+
+<!-- UTILITY BAR -->
+<div class="util-bar">
+  <span>📍 Serving Kane, DuPage &amp; DeKalb Counties, IL</span>
+  <span class="util-sep">|</span>
+  <span>Licensed #104.014799 · Bonded &amp; Insured</span>
+  <span class="util-sep">|</span>
+  <span>Est. 1973 · 50+ Years of Experience</span>
+</div>
+
+<!-- MAIN NAV -->
+<header class="site-nav" id="main-nav">
+  <div class="nav-inner">
+
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 3L2 10h2v9h6v-5h4v5h6v-9h2L12 3z"/>
+        </svg>
+      </div>
+      <div>
+        <span class="nav-logo-name">Countryside Roofing Inc.</span>
+        <span class="nav-logo-sub">Est. 1973 · 50+ Years of Experience</span>
+      </div>
+    </a>
+
+    <div class="nav-spacer"></div>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="index.html#services">Services <span class="chevron"></span></a>
+          <div class="mega-menu" role="region" aria-label="Services menu">
+            <div class="mega-col">
+              <div class="mega-col-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                Roofing Services
+              </div>
+              <ul>
+                <li><a href="index.html#services">Residential Roofing</a></li>
+                <li><a href="index.html#services">Commercial Roofing</a></li>
+                <li><a href="index.html#services">Multifamily Roofing</a></li>
+                <li><a href="index.html#services">Roof Replacement</a></li>
+                <li><a href="index.html#services">Roof Inspections</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Insurance Restoration
+              </div>
+              <ul>
+                <li><a href="index.html#services">Insurance Claim Assistance</a></li>
+                <li><a href="index.html#services">Storm Damage Restoration</a></li>
+                <li><a href="index.html#services">Hail &amp; Wind Damage Claims</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+                Exterior Renovation
+              </div>
+              <ul>
+                <li><a href="index.html#services">Siding</a></li>
+                <li><a href="index.html#services">Windows &amp; Doors</a></li>
+                <li><a href="index.html#services">Gutters &amp; Gutter Guards</a></li>
+                <li><a href="index.html#services">Outdoor Living</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="active"><a href="products.html">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <a href="tel:6303658887" class="nav-phone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 1.14 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+      </svg>
+      (630) 365-8887
+    </a>
+
+    <a href="index.html#contact" class="nav-cta">Get a Free Quote</a>
+
+    <a href="tel:6303658887" class="mob-phone-top" aria-label="Call us">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 1.14 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+      </svg>
+    </a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+
+  <!-- MOBILE DROPDOWN -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-inner">
+      <ul>
+        <li><a href="about.html" class="mob-link">About Us</a></li>
+        <li>
+          <button class="mob-link" id="mob-services-btn" aria-expanded="false" aria-controls="mob-services-sub">
+            Services
+            <span class="mob-chevron"></span>
+          </button>
+          <div class="mob-sub-menu" id="mob-services-sub">
+            <div class="mob-sub-group">
+              <div class="mob-sub-group-title">Roofing Services</div>
+              <ul>
+                <li><a href="index.html#services">Residential Roofing</a></li>
+                <li><a href="index.html#services">Commercial Roofing</a></li>
+                <li><a href="index.html#services">Multifamily Roofing</a></li>
+                <li><a href="index.html#services">Roof Replacement</a></li>
+                <li><a href="index.html#services">Roof Inspections</a></li>
+              </ul>
+            </div>
+            <div class="mob-sub-group">
+              <div class="mob-sub-group-title">Insurance Restoration</div>
+              <ul>
+                <li><a href="index.html#services">Insurance Claim Assistance</a></li>
+                <li><a href="index.html#services">Storm Damage Restoration</a></li>
+                <li><a href="index.html#services">Hail &amp; Wind Damage Claims</a></li>
+              </ul>
+            </div>
+            <div class="mob-sub-group">
+              <div class="mob-sub-group-title">Exterior Renovation</div>
+              <ul>
+                <li><a href="index.html#services">Siding</a></li>
+                <li><a href="index.html#services">Windows &amp; Doors</a></li>
+                <li><a href="index.html#services">Gutters &amp; Gutter Guards</a></li>
+                <li><a href="index.html#services">Outdoor Living</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="products.html" class="mob-link active">Products</a></li>
+        <li><a href="gallery.html" class="mob-link">Gallery</a></li>
+        <li><a href="reviews.html" class="mob-link">Reviews</a></li>
+        <li><a href="blog.html" class="mob-link">Blog</a></li>
+        <li>
+          <div class="mob-cta-row">
+            <a href="tel:6303658887" class="mob-phone-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 1.14 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              (630) 365-8887
+            </a>
+            <a href="index.html#contact" class="nav-cta" style="text-align:center; padding:0.8rem; font-size:0.9rem; display:block;">Get a Free Quote</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>›</span><span>Products</span>
+    </div>
+    <h1>Products We <em>Recommend</em><br>&amp; Install</h1>
+    <p>We've spent 50+ years testing and installing roofing, siding, and window products across Illinois. These are the brands we trust — chosen for their quality, warranties, and long-term performance in Midwest weather conditions.</p>
+    <div class="hero-stats">
+      <div><div class="h-stat-num">3</div><div class="h-stat-lbl">Product Categories</div></div>
+      <div><div class="h-stat-num">14+</div><div class="h-stat-lbl">Trusted Brands</div></div>
+      <div><div class="h-stat-num">50+</div><div class="h-stat-lbl">Years Experience</div></div>
+      <div><div class="h-stat-num">5,000+</div><div class="h-stat-lbl">Projects Completed</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<div class="intro-band">
+  <div class="intro-inner">
+    <p>Listed below are the high-quality roofing, siding and window replacement products we recommend. We are not limited to these products, but have found them to be of exceptional quality — and we have negotiated favorable price points to pass savings on to you. We've included links to their websites so you can do your own research before we meet.</p>
+  </div>
+</div>
+
+<!-- ════════════════════ ROOFING ════════════════════ -->
+<section class="products-section active" id="tab-roofing">
+  <div class="section-inner">
+    <div class="tab-pills">
+      <button class="tab-pill active" onclick="switchTab('roofing',this)">🏠 Roofing <span class="tab-pill-ct">6</span></button>
+      <button class="tab-pill" onclick="switchTab('siding',this)">🏡 Siding <span class="tab-pill-ct">5</span></button>
+      <button class="tab-pill" onclick="switchTab('windows',this)">🪟 Windows <span class="tab-pill-ct">3</span></button>
+    </div>
+    <div class="sec-hd">
+      <span class="sec-label">Roofing Products</span>
+      <h2 class="sec-title">Premium Roofing Materials We Install</h2>
+      <p class="sec-sub">All roofing products we install are manufactured by industry leaders and backed by strong warranties. As a CertainTeed SELECT ShingleMaster™ — held by fewer than 1% of contractors — we can offer the industry's strongest warranties on CertainTeed products.</p>
+    </div>
+    <div class="prod-grid">
+
+      <!-- CertainTeed -->
+      <div class="prod-card featured">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#f7f8f6"/>
+            <text x="30" y="42" font-family="Arial Black,sans-serif" font-size="22" font-weight="900" fill="#003865">Certain</text>
+            <text x="138" y="42" font-family="Arial Black,sans-serif" font-size="22" font-weight="900" fill="#f5a623">Teed</text>
+            <text x="30" y="58" font-family="Arial,sans-serif" font-size="9" font-weight="600" fill="#555" letter-spacing="1">ROOFING · SIDING · CEILINGS</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div><span class="featured-badge">Our #1 Recommended</span></div>
+          <div class="card-name">CertainTeed Roofing</div>
+          <div class="card-tagline">Ranked #1 Best Shingles by BobVila.com · Est. 1904</div>
+          <p class="card-desc">CertainTeed is North America's leading manufacturer of exterior building products. Their Landmark® architectural shingle series is the industry's best-selling product — and as a certified SELECT ShingleMaster™, we can offer CertainTeed's strongest 5-STAR SureStart PLUS warranty (25-year workmanship coverage), available from fewer than 1% of contractors nationwide.</p>
+          <ul class="card-features">
+            <li>Landmark® Series — dual-layer, Class A fire-rated architectural shingles</li>
+            <li>StreakFighter® algae-resistance technology (25-yr warranty)</li>
+            <li>NailTrak® precision-nailing zone for accurate installation</li>
+            <li>Grand Manor®, Carriage House® &amp; Belmont® luxury designer lines</li>
+            <li>NorthGate® SBS cold-weather rubberized shingles (Illinois-ideal)</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">🛡️ Warranty <span>Lifetime + 25-yr Labor</span></div>
+          <a href="https://www.certainteed.com" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- GAF -->
+      <div class="prod-card">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#f7f8f6"/>
+            <text x="120" y="48" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="36" font-weight="900" fill="#d42b25">GAF</text>
+            <text x="120" y="64" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="600" fill="#555" letter-spacing="1.5">ROOFING &amp; WATERPROOFING</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-name">GAF Roofing</div>
+          <div class="card-tagline">World's Largest Roofing Company · Est. 1886</div>
+          <p class="card-desc">GAF is North America's #1 shingle manufacturer, and their Timberline HDZ® is the #1-selling shingle in the residential market. The HDZ features revolutionary LayerLock® technology with the industry-first WindProven™ unlimited wind speed warranty — a first in the industry.</p>
+          <ul class="card-features">
+            <li>Timberline HDZ® — #1-selling residential shingle in North America</li>
+            <li>WindProven™ Limited Warranty — no maximum wind speed (industry first)</li>
+            <li>25-yr StainGuard Plus™ algae protection</li>
+            <li>StrikeZone® nailing area — 99.9% accuracy in controlled testing</li>
+            <li>FORTIFIED Roof™ eligible for insurance discounts</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">🛡️ Warranty <span>Lifetime + WindProven™</span></div>
+          <a href="https://www.gaf.com" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- IKO -->
+      <div class="prod-card">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#f7f8f6"/>
+            <text x="120" y="47" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="32" font-weight="900" fill="#0057a0">IKO</text>
+            <text x="120" y="64" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="600" fill="#555" letter-spacing="1.5">ROOFING INDUSTRIES</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-name">IKO Roofing</div>
+          <div class="card-tagline">Global Roofing Leader · Est. 1951</div>
+          <p class="card-desc">IKO is one of the world's largest privately owned manufacturers of roofing shingles, and a popular choice in the Midwest for their competitive value and strong performance. Their Dynasty® and Cambridge® shingle lines offer excellent wind ratings and color selections for Illinois homes.</p>
+          <ul class="card-features">
+            <li>Dynasty® AR — algae-resistant, 130 mph wind rated</li>
+            <li>Cambridge® Cool Colors — solar-reflective Energy Star options</li>
+            <li>Nordic® SBS-modified cold-climate shingle (ideal for IL winters)</li>
+            <li>ArmourZone® — wider nail zone for proper installation</li>
+            <li>HydroGrip® dual-sealant technology for superior bonding</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">🛡️ Warranty <span>Lifetime Limited</span></div>
+          <a href="https://www.iko.com" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Owens Corning -->
+      <div class="prod-card">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#f7f8f6"/>
+            <text x="20" y="35" font-family="Arial Black,sans-serif" font-size="14" font-weight="900" fill="#e4002b">OWENS</text>
+            <text x="20" y="53" font-family="Arial Black,sans-serif" font-size="14" font-weight="900" fill="#e4002b">CORNING</text>
+            <circle cx="205" cy="40" r="22" fill="#e4002b"/>
+            <text x="205" y="45" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="10" font-weight="900" fill="#fff">PINK</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Owens Corning Roofing</div>
+          <div class="card-tagline">Fortune 500 Manufacturer · Est. 1938</div>
+          <p class="card-desc">Owens Corning is one of the most recognized names in roofing, known for their TruDefinition® Duration® shingle series. Duration® shingles feature SureNail® Technology — a patented woven headlap fabric that dramatically increases holding strength in high-wind events common in Northern Illinois.</p>
+          <ul class="card-features">
+            <li>Duration® Series with SureNail® Technology — 130 mph wind rated</li>
+            <li>TruDefinition® color variation for premium aesthetic depth</li>
+            <li>WeatherGuard® HP &amp; Duration® Storm — Class 4 impact resistance</li>
+            <li>Solar-reflective options reduce attic heat by up to 30°F</li>
+            <li>Platinum Preferred Contractor program — enhanced warranty access</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">🛡️ Warranty <span>Lifetime + 130 mph Wind</span></div>
+          <a href="https://www.owenscorning.com/roofing" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Air Vent -->
+      <div class="prod-card">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#f7f8f6"/>
+            <text x="120" y="38" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="18" font-weight="900" fill="#1a3a6b">AIR VENT</text>
+            <text x="120" y="55" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" font-weight="600" fill="#555" letter-spacing=".8">ATTIC VENTILATION SYSTEMS</text>
+            <text x="120" y="68" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#7a8f84">The Science of Better Ventilation™</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Air Vent Attic Ventilation</div>
+          <div class="card-tagline">The Science of Better Ventilation™</div>
+          <p class="card-desc">Proper attic ventilation is critical for shingle warranty compliance and long-term roof performance in Illinois's extreme temperature swings. Air Vent is the industry leader in attic ventilation — we install their products as part of a complete roofing system, required for maximum warranty coverage on most shingle brands.</p>
+          <ul class="card-features">
+            <li>Ridge-A-Vent™ and VentSure™ ridge vents — most efficient on market</li>
+            <li>Balanced intake/exhaust system protects shingles from heat damage</li>
+            <li>Required for Lifetime warranty compliance on CertainTeed &amp; GAF</li>
+            <li>Reduces attic temperatures up to 40°F — lower energy bills</li>
+            <li>Prevents ice damming common in Illinois winters</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">⚡ Impact <span>Required for Warranty</span></div>
+          <a href="https://www.airvent.com" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Raindrop Gutter Guards -->
+      <div class="prod-card">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#f7f8f6"/>
+            <text x="25" y="36" font-family="Arial Black,sans-serif" font-size="15" font-weight="900" fill="#2a6049">Raindrop®</text>
+            <text x="25" y="54" font-family="Arial Black,sans-serif" font-size="12" font-weight="900" fill="#4a5e54">GUTTER GUARDS</text>
+            <text x="25" y="68" font-family="Arial,sans-serif" font-size="8" fill="#7a8f84">No-Clog Protection</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Raindrop® Gutter Guards</div>
+          <div class="card-tagline">Industry-Leading Clog Prevention</div>
+          <p class="card-desc">Raindrop® Gutter Guards use a unique 3D surface that moves water into the gutter while allowing debris to dry and blow away — eliminating clogging from leaves, pine needles, and Illinois's abundant seed pods. A great addition to any roofing project.</p>
+          <ul class="card-features">
+            <li>3D surface redirects debris — no clogging or overflow</li>
+            <li>Won't crack in freezing temperatures (Illinois-tested)</li>
+            <li>Prevents mosquito breeding and basement flooding</li>
+            <li>No maintenance required — water flows freely year-round</li>
+            <li>Transferable limited lifetime warranty</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">🛡️ Warranty <span>Limited Lifetime</span></div>
+          <a href="https://www.raindropproducts.com" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="comparison-note">
+      <div class="note-icon">💡</div>
+      <div class="note-body">
+        <strong>Not sure which shingles are right for your home?</strong>
+        <span>During your free inspection, we walk you through each brand's strengths, help you visualise colors, and recommend the best fit for your budget, home style, and Illinois climate conditions. No pressure — just honest guidance.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ SIDING ════════════════════ -->
+<section class="products-section" id="tab-siding">
+  <div class="section-inner">
+    <div class="tab-pills">
+      <button class="tab-pill" onclick="switchTab('roofing',this)">🏠 Roofing <span class="tab-pill-ct">6</span></button>
+      <button class="tab-pill active" onclick="switchTab('siding',this)">🏡 Siding <span class="tab-pill-ct">5</span></button>
+      <button class="tab-pill" onclick="switchTab('windows',this)">🪟 Windows <span class="tab-pill-ct">3</span></button>
+    </div>
+    <div class="sec-hd">
+      <span class="sec-label">Siding Products</span>
+      <h2 class="sec-title">Durable Siding That Transforms Your Home</h2>
+      <p class="sec-sub">As Certified Vinyl Siding Installers (VSI), we install all siding products to factory specifications — preserving full manufacturer warranties and ensuring proper moisture barrier protection for Illinois homes.</p>
+    </div>
+    <div class="prod-grid">
+
+      <!-- James Hardie -->
+      <div class="prod-card featured">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#f7f8f6"/>
+            <text x="120" y="34" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#555" letter-spacing="2">JAMES</text>
+            <text x="120" y="52" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="22" font-weight="900" fill="#d42b25">HARDIE</text>
+            <text x="120" y="66" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#888" letter-spacing="1">FIBER CEMENT SIDING</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div><span class="featured-badge">America's #1 Siding Brand</span></div>
+          <div class="card-name">James Hardie Fiber Cement Siding</div>
+          <div class="card-tagline">HardiePlank® — Most Popular Siding in North America</div>
+          <p class="card-desc">James Hardie invented fiber cement siding and remains North America's #1 brand. Unlike vinyl, it won't melt, rot, or crack, and it won't attract termites. HardiePlank® lap siding is non-combustible with a Class A fire rating — many insurance companies offer discounts for homes clad with it.</p>
+          <ul class="card-features">
+            <li>Non-combustible, Class A fire rating — potential insurance discount</li>
+            <li>Engineered specifically for climate zones (HZ5 for Illinois)</li>
+            <li>ColorPlus® factory-applied finish — won't peel, chip, or fade (15-yr warranty)</li>
+            <li>Resistant to moisture, termites, rot, and freeze-thaw cycles</li>
+            <li>HardieShingle®, HardiePanel®, HardieSoffit® complete the system</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">🛡️ Warranty <span>30-yr Non-Prorated</span></div>
+          <a href="https://www.jameshardie.com" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Mastic -->
+      <div class="prod-card">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#f7f8f6"/>
+            <text x="120" y="45" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="#003865">MASTIC</text>
+            <text x="120" y="62" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555" letter-spacing="1.5">HOME EXTERIOR PRODUCTS</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Mastic by Ply Gem</div>
+          <div class="card-tagline">Premium Vinyl Siding · Est. 1959</div>
+          <p class="card-desc">Mastic is one of the most respected names in vinyl siding, known for their wide color selection, superior fade-resistance, and excellent cold-weather performance. Their Quest® insulated siding adds an R-value layer that noticeably reduces heating and cooling costs.</p>
+          <ul class="card-features">
+            <li>Quest® Insulated Siding — up to R-4 insulation value added</li>
+            <li>Over 50 colors including deep tones rarely available in vinyl</li>
+            <li>TrueTextures® cedar grain realism</li>
+            <li>Superior cold-crack resistance for Illinois winters</li>
+            <li>Transferable lifetime limited warranty</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">🛡️ Warranty <span>Lifetime Transferable</span></div>
+          <a href="https://www.mastichomeexteriors.com" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Alside Siding -->
+      <div class="prod-card">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#f7f8f6"/>
+            <text x="120" y="45" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="30" font-weight="900" fill="#1a3a6b">ALSIDE</text>
+            <text x="120" y="62" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555" letter-spacing="1.5">WINDOWS &amp; SIDING</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Alside Siding</div>
+          <div class="card-tagline">American-Made Vinyl Excellence</div>
+          <p class="card-desc">Alside offers one of the widest vinyl siding product lines in the industry, covering every budget and architectural style. Their Ascend® composite cladding and Prodigy® insulated siding are especially popular for Illinois homeowners wanting a significant energy upgrade without the cost of fiber cement.</p>
+          <ul class="card-features">
+            <li>Prodigy® Insulated Siding — Energy Star rated, up to R-5</li>
+            <li>Ascend® Composite Cladding — 50-yr warranty, won't crack or warp</li>
+            <li>Wide range of profiles: lap, shake, board &amp; batten, panel</li>
+            <li>Wind-resistant up to 150 mph</li>
+            <li>Lifetime limited warranty</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">🛡️ Warranty <span>Lifetime / 50-yr Composite</span></div>
+          <a href="https://www.alside.com" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Napco -->
+      <div class="prod-card">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#f7f8f6"/>
+            <text x="120" y="43" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="26" font-weight="900" fill="#2a6049">NAPCO</text>
+            <text x="120" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555" letter-spacing="1.5">QUALITY VINYL PRODUCTS</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Napco Siding</div>
+          <div class="card-tagline">Quality Vinyl · Competitive Value</div>
+          <p class="card-desc">Napco is a dependable option for homeowners who want quality vinyl siding without a premium price. Built in the USA, Napco siding is thicker than many competitors and offers solid weather protection for Midwest conditions with a clean, traditional look in a range of profiles and colors.</p>
+          <ul class="card-features">
+            <li>Heavy-gauge .046" thickness — superior impact resistance</li>
+            <li>Double 4" and double 5" profiles for traditional IL home styles</li>
+            <li>Available in smooth and cedar grain textures</li>
+            <li>Fade-resistant pigments — color retains through harsh summers</li>
+            <li>Limited lifetime warranty</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">🛡️ Warranty <span>Limited Lifetime</span></div>
+          <a href="https://www.napcoexteriors.com" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Royal -->
+      <div class="prod-card">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#f7f8f6"/>
+            <text x="120" y="37" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="22" font-weight="900" fill="#7b2d8b">ROYAL</text>
+            <text x="120" y="53" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#555" letter-spacing="1">BUILDING PRODUCTS</text>
+            <text x="120" y="67" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#888">Woodgrain Exterior Siding</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Royal Building Products</div>
+          <div class="card-tagline">Woodgrain Exterior &amp; Trim Specialists</div>
+          <p class="card-desc">Royal Building Products is known for their cellular PVC trim and millwork, which looks and paints exactly like real wood — but never rots, warps, or requires painting as frequently. Pairs beautifully with both vinyl and fiber cement siding for a high-end finished appearance.</p>
+          <ul class="card-features">
+            <li>Woodgrain and smooth cellular PVC trim — paints like real wood</li>
+            <li>Celect® Cellular Composite Siding — Class 1 fire rating</li>
+            <li>Won't rot, split, or delaminate — zero organic content</li>
+            <li>Shake &amp; scallop accent panels for authentic craftsman styling</li>
+            <li>Limited lifetime warranty</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">🛡️ Warranty <span>Limited Lifetime</span></div>
+          <a href="https://www.royalbuildingproducts.com" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="comparison-note">
+      <div class="note-icon">🏡</div>
+      <div class="note-body">
+        <strong>Fiber cement vs. vinyl — which is right for your home?</strong>
+        <span>Fiber cement (James Hardie) is the premium option — more durable, more fire resistant, and better at holding paint long-term. Vinyl is lower cost and maintenance-free. We'll help you weigh both options honestly during your free consultation.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ WINDOWS ════════════════════ -->
+<section class="products-section" id="tab-windows">
+  <div class="section-inner">
+    <div class="tab-pills">
+      <button class="tab-pill" onclick="switchTab('roofing',this)">🏠 Roofing <span class="tab-pill-ct">6</span></button>
+      <button class="tab-pill" onclick="switchTab('siding',this)">🏡 Siding <span class="tab-pill-ct">5</span></button>
+      <button class="tab-pill active" onclick="switchTab('windows',this)">🪟 Windows <span class="tab-pill-ct">3</span></button>
+    </div>
+    <div class="sec-hd">
+      <span class="sec-label">Window Products</span>
+      <h2 class="sec-title">Energy-Efficient Windows from Top Brands</h2>
+      <p class="sec-sub">As a Simonton Windows Preferred Installer, we have the training and authorisation to install to exact factory specifications — ensuring full warranty coverage and optimal energy performance in every home.</p>
+    </div>
+    <div class="prod-grid">
+
+      <!-- Simonton -->
+      <div class="prod-card featured">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#002b5c"/>
+            <text x="120" y="38" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="#fff">SIMONTON</text>
+            <text x="120" y="54" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#6ab0e0" letter-spacing="1.5">WINDOWS &amp; DOORS</text>
+            <rect x="60" y="60" width="120" height="12" rx="3" fill="#e8a020"/>
+            <text x="120" y="69.5" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="7" fill="#fff">PREFERRED INSTALLER</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div><span class="featured-badge">Preferred Installer — Factory Certified</span></div>
+          <div class="card-name">Simonton Windows &amp; Doors</div>
+          <div class="card-tagline">Energy Star Most Efficient 2024 — Reflections® Series</div>
+          <p class="card-desc">Simonton has been creating energy-efficient windows since 1946 and all 12 of their product lines meet Energy Star guidelines. Their Reflections® 5500 series was named Energy Star's Most Efficient in 2024. As a Preferred Installer, we are authorised to offer their full warranty and install to exact spec.</p>
+          <ul class="card-features">
+            <li>Reflections® 5500 — Energy Star Most Efficient 2024</li>
+            <li>All product lines meet Energy Star guidelines (12 lines total)</li>
+            <li>Triple-fin weatherstripping — stops air &amp; moisture infiltration</li>
+            <li>Low-E glass with Argon gas standard — significantly reduces heat transfer</li>
+            <li>Double and triple-pane options available</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">🛡️ Warranty <span>Full Lifetime w/ Labor</span></div>
+          <a href="https://www.simonton.com" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Marvin -->
+      <div class="prod-card">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#f7f8f6"/>
+            <text x="120" y="44" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="#1a1a1a">MARVIN</text>
+            <text x="120" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#888" letter-spacing="2">WINDOWS &amp; DOORS</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Marvin Windows &amp; Doors</div>
+          <div class="card-tagline">Premium Craftsmanship · Family-Owned Since 1912</div>
+          <p class="card-desc">Marvin is regarded as one of the finest window manufacturers in North America — rated #1 in quality and innovation by homeowners. Their Ultrex® fiberglass is smoother and stronger than competitors', and their extruded aluminium sets the standard in durability. Available in 3 collections: Signature, Elevate, and Essential.</p>
+          <ul class="card-features">
+            <li>Ultrex® fiberglass — proprietary, stronger than competitor alternatives</li>
+            <li>Signature Ultimate series — top-rated for energy efficiency</li>
+            <li>20-year parts warranty, 10-year finish warranty (best in class)</li>
+            <li>Wood interior options — 6 species, pairs with any interior design</li>
+            <li>Custom sizes and shapes for any architectural style</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">🛡️ Warranty <span>10-yr Finish / 20-yr Parts</span></div>
+          <a href="https://www.marvin.com" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Pella -->
+      <div class="prod-card">
+        <div class="card-logo">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="240" height="80" fill="#f7f8f6"/>
+            <text x="120" y="44" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="30" font-weight="900" fill="#005a87">PELLA</text>
+            <text x="120" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#888" letter-spacing="2">WINDOWS &amp; DOORS</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Pella Windows &amp; Doors</div>
+          <div class="card-tagline">150+ Patents · Rated #1 by Consumer Reports</div>
+          <p class="card-desc">Pella holds over 150 product and design patents and has been consistently rated #1 by Consumer Reports. Their Lifestyle Series is particularly well-regarded for comfort, energy efficiency, and sound control — Energy Star certified across all product lines in all 50 states.</p>
+          <ul class="card-features">
+            <li>Lifestyle Series — best-in-class energy efficiency &amp; sound control</li>
+            <li>Impervia® fiberglass — extremely durable for all climates</li>
+            <li>Built-in between-the-glass blinds &amp; shades option</li>
+            <li>Energy Star certified across all product lines and all 50 states</li>
+            <li>Available in wood, fiberglass, and vinyl materials</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="warranty-badge">🛡️ Warranty <span>10-yr Limited</span></div>
+          <a href="https://www.pella.com" target="_blank" class="learn-link">Learn More →</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="comparison-note">
+      <div class="note-icon">🪟</div>
+      <div class="note-body">
+        <strong>What window frame material is best for Illinois?</strong>
+        <span>Vinyl is the most popular choice — low maintenance, energy-efficient, and cost-effective. Fiberglass (Marvin, Pella Impervia) is stronger and better for extreme temperatures. Wood interior + fiberglass exterior is the premium choice for aesthetics and performance. We'll help you choose the right fit.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="cta-inner">
+    <h2>Ready to Choose the Right Products<br>for Your Home?</h2>
+    <p>Schedule a free, no-pressure inspection and we'll walk you through every option — showing you samples and giving you our honest recommendation based on your specific home and budget.</p>
+    <a href="tel:6303658887" class="btn-white">📞 Schedule Free Consultation</a>
+    <a href="index.html#faq" class="btn-outline-white">FAQ &amp; Common Questions</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© 2026 Countryside Roofing Inc. · Licensed #104.014799 · Bonded &amp; Insured</span>
+    <span>Kane, DuPage &amp; DeKalb Counties, IL · <a href="tel:6303658887">(630) 365-8887</a></span>
+  </div>
+</footer>
+
+<script>
+/* ── Nav ── */
+const hamburger   = document.getElementById('hamburger');
+const mobileNav   = document.getElementById('mobile-nav');
+const servicesBtn = document.getElementById('mob-services-btn');
+const servicesSub = document.getElementById('mob-services-sub');
+
+hamburger.addEventListener('click', () => {
+  const open = mobileNav.classList.toggle('is-open');
+  hamburger.classList.toggle('is-open', open);
+  hamburger.setAttribute('aria-expanded', open);
+  mobileNav.setAttribute('aria-hidden', !open);
+});
+servicesBtn.addEventListener('click', () => {
+  const open = servicesSub.classList.toggle('open');
+  servicesBtn.classList.toggle('open', open);
+  servicesBtn.setAttribute('aria-expanded', open);
+});
+mobileNav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav.classList.remove('is-open');
+    hamburger.classList.remove('is-open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobileNav.setAttribute('aria-hidden', 'true');
+  });
+});
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 1024) { mobileNav.classList.remove('is-open'); hamburger.classList.remove('is-open'); }
+});
+
+/* ── Tabs ── */
+function switchTab(tab, btn) {
+  document.querySelectorAll('.products-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-pill').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + tab).classList.add('active');
+  // Mark matching pill in the newly active section
+  const section = document.getElementById('tab-' + tab);
+  section.querySelectorAll('.tab-pill').forEach(b => {
+    if (b.getAttribute('onclick').includes("'" + tab + "'")) b.classList.add('active');
+  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
