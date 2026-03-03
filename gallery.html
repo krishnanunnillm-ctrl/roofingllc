@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Countryside Roofing Inc. — Before & After Project Photos</title>
+<meta name="description" content="Browse real before & after project photos from Countryside Roofing Inc. Roofing, siding, windows and gutters across Kane, DuPage & DeKalb Counties, IL since 1973.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --green:       #2a6049;
+  --green-dark:  #1c4434;
+  --green-mid:   #3a7a5c;
+  --green-light: #e8f4ee;
+  --accent:      #4caf7d;
+  --gold:        #e8a020;
+  --gold-dark:   #c8881a;
+  --white:       #ffffff;
+  --off-white:   #f7f9f7;
+  --gray-bg:     #f4f6f4;
+  --gray-line:   #e5e9e6;
+  --text:        #1a2820;
+  --text-mid:    #4a5e54;
+  --text-light:  #7a8f84;
+  --max-w:       1400px;
+  --nav-h:       68px;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px; line-height: 1.65;
+  color: var(--text); background: var(--off-white); overflow-x: hidden;
+}
+
+/* ══════════════════════════════════════
+   UTILITY BAR
+══════════════════════════════════════ */
+.util-bar {
+  background: var(--green-dark); color: rgba(255,255,255,0.75);
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.04em;
+  padding: 0.45rem 16px; display: flex; align-items: center;
+  justify-content: center; gap: 1.5rem; flex-wrap: wrap;
+}
+.util-sep { color: rgba(255,255,255,0.2); }
+
+/* ══════════════════════════════════════
+   SITE NAV
+══════════════════════════════════════ */
+.site-nav {
+  background: var(--white); position: sticky; top: 0; z-index: 500;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.09); border-bottom: 3px solid var(--green);
+}
+.nav-inner {
+  width: 100%; max-width: var(--max-w); margin: 0 auto;
+  padding: 0 16px; height: var(--nav-h);
+  display: flex; align-items: center; gap: 1rem;
+}
+.nav-logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; flex-shrink: 0; }
+.nav-logo-icon { width: 42px; height: 42px; background: var(--green); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.nav-logo-icon svg { width: 24px; height: 24px; }
+.nav-logo-name { font-size: 1.05rem; font-weight: 700; color: var(--text); display: block; line-height: 1.2; }
+.nav-logo-sub { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; color: var(--text-light); display: block; }
+.nav-spacer { flex: 1; }
+.nav-links { display: flex; list-style: none; align-items: center; gap: 0.1rem; }
+.nav-links > li { position: relative; }
+.nav-links > li > a {
+  display: flex; align-items: center; gap: 0.3rem; color: var(--text-mid);
+  text-decoration: none; font-size: 0.875rem; font-weight: 600;
+  padding: 0.5rem 0.7rem; border-radius: 5px;
+  transition: color .22s, background .22s; white-space: nowrap;
+}
+.nav-links > li > a:hover,
+.nav-links > li.active > a { color: var(--green); background: var(--green-light); }
+.nav-links > li.active > a { font-weight: 700; }
+.chevron {
+  display: inline-block; width: 9px; height: 9px;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-2px); transition: transform .22s;
+  flex-shrink: 0; margin-top: 1px;
+}
+.nav-links > li:hover > a .chevron { transform: rotate(225deg) translateY(2px); }
+.nav-phone {
+  display: flex; align-items: center; gap: 0.4rem; color: var(--text-mid);
+  text-decoration: none; font-size: 0.875rem; font-weight: 700;
+  white-space: nowrap; flex-shrink: 0; transition: color .22s;
+}
+.nav-phone:hover { color: var(--green); }
+.nav-phone svg { width: 14px; height: 14px; flex-shrink: 0; }
+.nav-cta {
+  background: var(--gold); color: #fff !important;
+  font-family: 'Outfit', sans-serif; font-size: 0.84rem; font-weight: 700 !important;
+  padding: 0.6rem 1.2rem !important; border-radius: 5px !important;
+  text-decoration: none; white-space: nowrap; flex-shrink: 0;
+  transition: background .22s, transform .22s, box-shadow .22s;
+  box-shadow: 0 2px 10px rgba(232,160,32,0.28); display: inline-block;
+}
+.nav-cta:hover { background: var(--gold-dark) !important; transform: translateY(-1px); box-shadow: 0 4px 18px rgba(232,160,32,0.38); }
+
+/* Mega menu */
+.mega-menu {
+  position: absolute; top: calc(100% + 14px); left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background: var(--white); border: 1px solid var(--gray-line);
+  border-radius: 10px; box-shadow: 0 16px 56px rgba(0,0,0,0.13);
+  padding: 1.5rem; display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 0; min-width: 720px; opacity: 0; visibility: hidden;
+  transition: opacity .2s, transform .2s, visibility .2s;
+  pointer-events: none; z-index: 600;
+}
+.mega-menu::before {
+  content: ''; position: absolute; top: -6px; left: 50%;
+  transform: translateX(-50%) rotate(45deg); width: 12px; height: 12px;
+  background: var(--white); border-left: 1px solid var(--gray-line); border-top: 1px solid var(--gray-line);
+}
+.nav-links > li:hover .mega-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); pointer-events: auto; }
+.mega-col { padding: 0 1.2rem; border-right: 1px solid var(--gray-line); }
+.mega-col:first-child { padding-left: 0; }
+.mega-col:last-child { padding-right: 0; border-right: none; }
+.mega-col-title {
+  font-size: 0.68rem; font-weight: 800; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--green); margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem; border-bottom: 2px solid var(--green-light);
+  display: flex; align-items: center; gap: 0.4rem; white-space: nowrap; min-height: 28px;
+}
+.mega-col-title svg { width: 13px; height: 13px; flex-shrink: 0; }
+.mega-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.05rem; }
+.mega-col ul li a {
+  display: block; color: var(--text-mid); text-decoration: none;
+  font-size: 0.85rem; font-weight: 500; padding: 0.38rem 0.5rem;
+  border-radius: 4px; transition: color .22s, background .22s, padding-left .22s;
+}
+.mega-col ul li a:hover { color: var(--green); background: var(--green-light); padding-left: 0.85rem; }
+
+/* Hamburger */
+.nav-hamburger {
+  display: none; flex-direction: column; gap: 5px; cursor: pointer;
+  padding: 0.5rem; border: 2px solid var(--gray-line); background: none;
+  border-radius: 6px; transition: border-color .2s, background .2s;
+}
+.nav-hamburger:hover { border-color: var(--green); background: var(--green-light); }
+.nav-hamburger span { display: block; width: 18px; height: 2px; background: var(--text); border-radius: 2px; transition: transform .25s, opacity .2s; }
+.nav-hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.mob-phone-top { display: none; align-items: center; gap: 5px; color: var(--green); font-size: 0.78rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+
+/* Mobile dropdown */
+.mobile-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); box-shadow: 0 8px 32px rgba(0,0,0,.12); border-top: 2px solid var(--green); z-index: 490; max-height: calc(100vh - var(--nav-h)); overflow-y: auto; }
+.mobile-nav.is-open { display: block; }
+.mobile-nav-inner { padding: 10px 0; }
+.mobile-nav-inner ul { list-style: none; }
+.mobile-nav-inner > ul > li { border-bottom: 1px solid var(--gray-line); }
+.mobile-nav-inner > ul > li:last-child { border-bottom: none; }
+.mob-link { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 13px 20px; font-family: 'Outfit', sans-serif; font-size: 0.92rem; font-weight: 600; color: var(--text); background: none; border: none; text-align: left; cursor: pointer; text-decoration: none; transition: background .15s, color .15s; }
+.mob-link:hover, .mob-link.active { background: var(--green-light); color: var(--green); }
+.mobile-nav-inner > ul > li > a.mob-link { display: flex; }
+.mob-chevron { display: inline-block; width: 9px; height: 9px; border-right: 2px solid var(--text-light); border-bottom: 2px solid var(--text-light); transform: rotate(45deg) translateY(-2px); transition: transform .25s; flex-shrink: 0; }
+.mob-link.open .mob-chevron { transform: rotate(225deg) translateY(2px); }
+.mob-sub-menu { background: var(--off-white); border-top: 1px solid var(--gray-line); max-height: 0; overflow: hidden; transition: max-height .3s; }
+.mob-sub-menu.open { max-height: 900px; }
+.mob-sub-group { padding: 0.8rem 1rem 0.4rem; }
+.mob-sub-group + .mob-sub-group { border-top: 1px solid var(--gray-line); }
+.mob-sub-group-title { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green); padding-bottom: 0.4rem; border-bottom: 2px solid var(--green-light); margin-bottom: 0.4rem; }
+.mob-sub-group ul { list-style: none; }
+.mob-sub-group ul li a { display: block; color: var(--text-mid); text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 0.4rem 0.25rem; transition: color .22s; }
+.mob-sub-group ul li a:hover { color: var(--green); }
+.mob-cta-row { padding: 0.9rem 1rem 1rem; display: flex; flex-direction: column; gap: 0.65rem; border-top: 2px solid var(--gray-line); }
+
+/* ══════════════════════════════════════
+   PAGE HERO
+══════════════════════════════════════ */
+.page-hero {
+  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 100%);
+  padding: 5rem 0 4.5rem; position: relative; overflow: hidden;
+}
+.page-hero::before { content: ''; position: absolute; right: -80px; top: -80px; width: 420px; height: 420px; border-radius: 50%; background: rgba(255,255,255,.04); pointer-events: none; }
+.page-hero::after { content: ''; position: absolute; left: -60px; bottom: -60px; width: 300px; height: 300px; border-radius: 50%; background: rgba(0,0,0,.06); pointer-events: none; }
+.page-hero-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+.breadcrumb { font-size: 0.8rem; color: rgba(255,255,255,0.55); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.4rem; }
+.breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; transition: color .2s; }
+.breadcrumb a:hover { color: #fff; }
+.breadcrumb span { color: rgba(255,255,255,0.35); }
+.page-hero h1 { font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 1rem; }
+.page-hero h1 em { font-style: normal; color: var(--accent); }
+.page-hero p { color: rgba(255,255,255,0.8); font-size: 1.05rem; line-height: 1.75; max-width: 600px; }
+.hero-pills { display: flex; gap: 0.5rem; margin-top: 1.8rem; flex-wrap: wrap; }
+.hero-pill { background: rgba(255,255,255,.12); color: rgba(255,255,255,.85); border: 1px solid rgba(255,255,255,.2); padding: 0.3rem 0.9rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+
+/* ══════════════════════════════════════
+   FACTS BAR
+══════════════════════════════════════ */
+.facts-bar {
+  background: var(--white); border-bottom: 1px solid var(--gray-line);
+  padding: 0.85rem 0;
+}
+.facts-bar-inner {
+  max-width: var(--max-w); margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap; justify-content: center;
+}
+.fact { display: flex; align-items: center; gap: 0.5rem; font-size: 0.82rem; font-weight: 600; color: var(--text-mid); }
+.fact-icon { color: var(--green); font-size: 1rem; }
+.fact strong { color: var(--text); }
+
+/* ══════════════════════════════════════
+   TAB BAR — Pill Style
+══════════════════════════════════════ */
+.tab-bar-inner {
+  display: flex; gap: 0.6rem;
+  overflow-x: auto; flex-wrap: nowrap;
+  margin-bottom: 2rem;
+  padding-bottom: 0.25rem;
+}
+.tab-bar-inner::-webkit-scrollbar { display: none; }
+.tab {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  padding: 0.55rem 1.1rem;
+  font-family: 'Outfit', sans-serif; font-size: 0.88rem; font-weight: 600;
+  color: var(--text-mid); background: var(--gray-bg);
+  border: 1.5px solid var(--gray-line); border-radius: 30px;
+  cursor: pointer; transition: all .2s; white-space: nowrap; flex-shrink: 0;
+}
+.tab:hover { border-color: var(--green); color: var(--green); background: var(--green-light); }
+.tab.active { background: var(--green); color: #fff; border-color: var(--green); font-weight: 700; box-shadow: 0 3px 12px rgba(42,96,73,.25); }
+.tab-ct {
+  background: rgba(255,255,255,.25); color: #fff;
+  font-size: 0.65rem; font-weight: 700; padding: 0.1rem 0.45rem; border-radius: 10px;
+}
+.tab:not(.active) .tab-ct { background: var(--green-light); color: var(--green); }
+
+/* ══════════════════════════════════════
+   GALLERY SECTIONS
+══════════════════════════════════════ */
+.gallery-section { display: none; padding: 3rem 0 5rem; background: var(--gray-bg); }
+.gallery-section.active { display: block; }
+.gallery-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+/* Section heading */
+.sec-hd { margin-bottom: 2rem; }
+.sec-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--green); display: block; margin-bottom: 0.4rem; }
+.sec-title { font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 800; color: var(--text); margin-bottom: 0.4rem; }
+.sec-sub { color: var(--text-mid); font-size: 0.92rem; line-height: 1.7; max-width: 640px; }
+
+/* Drag hint */
+.drag-hint {
+  text-align: center; margin-bottom: 1.5rem; color: var(--text-light);
+  font-size: 0.82rem; font-weight: 500;
+  display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+}
+.drag-icon {
+  width: 30px; height: 30px; background: var(--green-light); color: var(--green);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem;
+}
+
+/* ── FEATURED SLIDER ── */
+.featured-wrap {
+  position: relative; width: 100%; height: 600px;
+  border-radius: 14px; overflow: hidden;
+  box-shadow: 0 16px 60px rgba(0,0,0,.18);
+  cursor: ew-resize; user-select: none; margin-bottom: 1rem;
+}
+.feat-before {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+}
+.feat-after-wrap { position: absolute; inset: 0; overflow: hidden; }
+.feat-after { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.feat-divider {
+  position: absolute; top: 0; bottom: 0; width: 3px;
+  background: #fff; box-shadow: 0 0 16px rgba(0,0,0,.5); z-index: 10; pointer-events: none;
+}
+.feat-handle {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px; height: 52px; background: #fff; border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0,0,0,.3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.9rem; color: var(--green); font-weight: 900;
+  z-index: 11; pointer-events: none; letter-spacing: -2px;
+}
+.feat-label {
+  position: absolute; z-index: 8; font-size: 0.75rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase; padding: 0.32rem 0.8rem; border-radius: 5px;
+}
+.feat-label.before { top: 16px; left: 16px; background: rgba(0,0,0,.58); color: #fff; }
+.feat-label.after  { top: 16px; right: 16px; background: rgba(42,96,73,.88); color: #fff; }
+.feat-info {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(10,30,20,.88));
+  padding: 3rem 1.8rem 1.5rem; z-index: 9; pointer-events: none;
+}
+.feat-title { color: #fff; font-size: 1.25rem; font-weight: 800; margin-bottom: 0.3rem; }
+.feat-meta { color: rgba(255,255,255,.65); font-size: 0.82rem; display: flex; align-items: center; gap: 1rem; }
+.feat-tag { background: var(--accent); color: #fff; font-size: 0.68rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 20px; }
+
+/* ── THUMBNAIL STRIP ── */
+.thumb-strip {
+  display: grid; grid-template-columns: repeat(6, 1fr);
+  gap: 0.9rem; margin-top: 1rem;
+}
+.thumb {
+  border-radius: 8px; overflow: hidden; cursor: pointer;
+  border: 2px solid transparent; transition: all .22s;
+  background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+.thumb:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(42,96,73,.15); }
+.thumb.active { border-color: var(--green); box-shadow: 0 4px 18px rgba(42,96,73,.25); }
+.thumb-img { height: 90px; position: relative; overflow: hidden; }
+.thumb-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.thumb:hover .thumb-img img { transform: scale(1.07); }
+.thumb-img::after { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: rgba(255,255,255,.7); }
+.thumb-body { padding: 0.55rem 0.65rem; }
+.thumb-title { font-size: 0.7rem; font-weight: 700; color: var(--text); line-height: 1.3; margin-bottom: 0.15rem; }
+.thumb-loc { font-size: 0.62rem; color: var(--text-light); }
+.thumb.active .thumb-body::before { content: '● Now showing'; font-size: 0.58rem; color: var(--green); font-weight: 700; display: block; margin-bottom: 0.2rem; }
+
+
+/* ══════════════════════════════════════
+   OUR TEAM
+══════════════════════════════════════ */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.team-card {
+  background: var(--white);
+  border-radius: 14px;
+  border: 1.5px solid var(--gray-line);
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,.05);
+  transition: transform .2s, box-shadow .2s;
+  display: flex; flex-direction: column;
+}
+.team-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,0,0,.1); }
+.team-photo {
+  height: 180px;
+  background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 4rem;
+  flex-shrink: 0;
+}
+.team-body { padding: 1.4rem; flex: 1; }
+.team-name { font-size: 1.05rem; font-weight: 800; color: var(--text); margin-bottom: 0.2rem; }
+.team-role { font-size: 0.78rem; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem; }
+.team-bio { font-size: 0.88rem; color: var(--text-mid); line-height: 1.65; margin-bottom: 1rem; }
+.team-stats { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.team-stats span {
+  background: var(--green-light); color: var(--green);
+  font-size: 0.72rem; font-weight: 600; padding: 0.22rem 0.65rem;
+  border-radius: 20px;
+}
+.team-cta {
+  text-align: center;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 14px;
+  border: 1.5px solid var(--gray-line);
+}
+.team-cta p { color: var(--text-mid); font-size: 1rem; margin-bottom: 1.2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+/* ══════════════════════════════════════
+   STATS STRIP
+══════════════════════════════════════ */
+.stats-strip {
+  background: var(--green); padding: 2.5rem 0;
+}
+.stats-strip-inner {
+  max-width: var(--max-w); margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: center;
+  gap: 5rem; flex-wrap: wrap;
+}
+.s-stat { text-align: center; }
+.s-stat-num { font-size: 2.2rem; font-weight: 800; color: #fff; line-height: 1; }
+.s-stat-lbl { font-size: 0.75rem; color: rgba(255,255,255,.65); margin-top: 0.25rem; letter-spacing: 0.03em; }
+
+/* ══════════════════════════════════════
+   CTA BANNER
+══════════════════════════════════════ */
+.cta-banner {
+  background: var(--white); padding: 4rem 0;
+  border-top: 1px solid var(--gray-line); text-align: center;
+}
+.cta-banner-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+.cta-banner h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; color: var(--text); margin-bottom: 0.6rem; }
+.cta-banner p { color: var(--text-mid); font-size: 1rem; margin-bottom: 2rem; max-width: 540px; margin-left: auto; margin-right: auto; }
+.cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.btn-primary {
+  display: inline-flex; align-items: center; background: var(--green); color: #fff;
+  font-family: 'Outfit', sans-serif; font-size: 0.95rem; font-weight: 700;
+  padding: 0.9rem 2rem; border-radius: 6px; text-decoration: none; border: none;
+  cursor: pointer; transition: background .2s, transform .15s; white-space: nowrap;
+}
+.btn-primary:hover { background: var(--green-dark); transform: translateY(-2px); }
+.btn-outline {
+  display: inline-flex; align-items: center; background: transparent; color: var(--green);
+  font-family: 'Outfit', sans-serif; font-size: 0.95rem; font-weight: 600;
+  padding: 0.9rem 2rem; border-radius: 6px; text-decoration: none;
+  border: 2px solid var(--green); cursor: pointer; transition: all .2s; white-space: nowrap;
+}
+.btn-outline:hover { background: var(--green); color: #fff; transform: translateY(-2px); }
+
+/* ══════════════════════════════════════
+   FOOTER
+══════════════════════════════════════ */
+.site-footer { background: var(--green-dark); color: rgba(255,255,255,0.65); padding: 2rem 0; font-size: 0.82rem; }
+.footer-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.footer-inner a { color: rgba(255,255,255,0.75); text-decoration: none; transition: color .2s; }
+.footer-inner a:hover { color: #fff; }
+
+/* ══════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════ */
+@media (max-width: 1023px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .nav-links { display: none; }
+  .nav-phone { display: none; }
+  .nav-hamburger { display: flex; }
+  .mob-phone-top { display: flex; }
+  .thumb-strip { grid-template-columns: repeat(3, 1fr); }
+  .featured-wrap { height: 420px; }
+}
+@media (max-width: 767px) {
+  .team-grid { grid-template-columns: 1fr; }
+  .tab { padding: 0.45rem 0.85rem; font-size: 0.8rem; }
+  .util-bar { display: none; }
+  .page-hero { padding: 3.5rem 0 3rem; }
+  .featured-wrap { height: 280px; cursor: ns-resize; }
+  .thumb-strip { grid-template-columns: repeat(2, 1fr); }
+  .stats-strip-inner { gap: 2rem; }
+  .s-stat-num { font-size: 1.7rem; }
+  .cta-btns { flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- UTILITY BAR -->
+<div class="util-bar">
+  <span>📍 Serving Kane, DuPage &amp; DeKalb Counties, IL</span>
+  <span class="util-sep">|</span>
+  <span>Licensed #104.014799 · Bonded &amp; Insured</span>
+  <span class="util-sep">|</span>
+  <span>Est. 1973 · 50+ Years of Experience</span>
+</div>
+
+<!-- MAIN NAV -->
+<header class="site-nav" id="main-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M12 3L2 10h2v9h6v-5h4v5h6v-9h2L12 3z"/></svg>
+      </div>
+      <div>
+        <span class="nav-logo-name">Countryside Roofing Inc.</span>
+        <span class="nav-logo-sub">Est. 1973 · 50+ Years of Experience</span>
+      </div>
+    </a>
+    <div class="nav-spacer"></div>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html#why">About Us</a></li>
+        <li>
+          <a href="index.html#services">Services <span class="chevron"></span></a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <div class="mega-col-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                Roofing Services
+              </div>
+              <ul>
+                <li><a href="index.html#services">Residential Roofing</a></li>
+                <li><a href="index.html#services">Commercial Roofing</a></li>
+                <li><a href="index.html#services">Multifamily Roofing</a></li>
+                <li><a href="index.html#services">Roof Replacement</a></li>
+                <li><a href="index.html#services">Roof Inspections</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Insurance Restoration
+              </div>
+              <ul>
+                <li><a href="index.html#services">Insurance Claim Assistance</a></li>
+                <li><a href="index.html#services">Storm Damage Restoration</a></li>
+                <li><a href="index.html#services">Hail &amp; Wind Damage Claims</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+                Exterior Renovation
+              </div>
+              <ul>
+                <li><a href="index.html#services">Siding</a></li>
+                <li><a href="index.html#services">Windows &amp; Doors</a></li>
+                <li><a href="index.html#services">Gutters &amp; Gutter Guards</a></li>
+                <li><a href="index.html#services">Outdoor Living</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="products.html">Products</a></li>
+        <li class="active"><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <a href="tel:6303658887" class="nav-phone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 1.14 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      (630) 365-8887
+    </a>
+    <a href="index.html#contact" class="nav-cta">Get a Free Quote</a>
+    <a href="tel:6303658887" class="mob-phone-top">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 1.14 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      (630) 365-8887
+    </a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-inner">
+      <ul>
+        <li><a href="index.html#why" class="mob-link">About Us</a></li>
+        <li>
+          <button class="mob-link" id="mob-services-btn" aria-expanded="false">
+            Services <span class="mob-chevron"></span>
+          </button>
+          <div class="mob-sub-menu" id="mob-services-sub">
+            <div class="mob-sub-group">
+              <div class="mob-sub-group-title">Roofing Services</div>
+              <ul>
+                <li><a href="index.html#services">Residential Roofing</a></li>
+                <li><a href="index.html#services">Commercial Roofing</a></li>
+                <li><a href="index.html#services">Multifamily Roofing</a></li>
+                <li><a href="index.html#services">Roof Replacement</a></li>
+                <li><a href="index.html#services">Roof Inspections</a></li>
+              </ul>
+            </div>
+            <div class="mob-sub-group">
+              <div class="mob-sub-group-title">Insurance Restoration</div>
+              <ul>
+                <li><a href="index.html#services">Insurance Claim Assistance</a></li>
+                <li><a href="index.html#services">Storm Damage Restoration</a></li>
+                <li><a href="index.html#services">Hail &amp; Wind Damage Claims</a></li>
+              </ul>
+            </div>
+            <div class="mob-sub-group">
+              <div class="mob-sub-group-title">Exterior Renovation</div>
+              <ul>
+                <li><a href="index.html#services">Siding</a></li>
+                <li><a href="index.html#services">Windows &amp; Doors</a></li>
+                <li><a href="index.html#services">Gutters &amp; Gutter Guards</a></li>
+                <li><a href="index.html#services">Outdoor Living</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="products.html" class="mob-link">Products</a></li>
+        <li><a href="gallery.html" class="mob-link active">Gallery</a></li>
+        <li><a href="reviews.html" class="mob-link">Reviews</a></li>
+        <li><a href="blog.html" class="mob-link">Blog</a></li>
+        <li>
+          <div class="mob-cta-row">
+            <a href="index.html#contact" class="nav-cta" style="text-align:center;padding:0.8rem;font-size:0.9rem;display:block;">Get a Free Quote</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>Gallery</span>
+    </div>
+    <h1>Real Projects,<br><em>Real Transformations</em></h1>
+    <p>Browse before &amp; after photos from real jobs across Kane, DuPage and DeKalb Counties. Drag the handle on any image to reveal the full transformation.</p>
+    <div class="hero-pills">
+      <span class="hero-pill">🏠 Roofing</span>
+      <span class="hero-pill">🏗 Siding</span>
+      <span class="hero-pill">🪟 Windows</span>
+      <span class="hero-pill">📍 Local Illinois Projects</span>
+      <span class="hero-pill">5,000+ Projects Completed</span>
+    </div>
+  </div>
+</section>
+
+<!-- FACTS BAR -->
+<div class="facts-bar">
+  <div class="facts-bar-inner">
+    <div class="fact"><span class="fact-icon">✅</span> <strong>5,000+</strong> Projects Completed</div>
+    <div class="fact"><span class="fact-icon">⭐</span> <strong>4.9</strong> Google Rating</div>
+    <div class="fact"><span class="fact-icon">🛡</span> Licensed #104.014799 · Bonded &amp; Insured</div>
+    <div class="fact"><span class="fact-icon">🏠</span> Est. 1973 · 50+ Years Serving Illinois</div>
+    <div class="fact"><span class="fact-icon">👥</span> <strong>65%</strong> of Customers Are Referrals</div>
+  </div>
+</div>
+
+<!-- ═══════════ ROOFING ═══════════ -->
+<div class="gallery-section active" id="tab-roofing">
+  <div class="gallery-inner">
+    <div class="tab-bar-inner">
+      <button class="tab active" onclick="switchTab('roofing', this)">🏠 Roofing <span class="tab-ct">6</span></button>
+      <button class="tab" onclick="switchTab('siding', this)">🏗 Siding <span class="tab-ct">6</span></button>
+      <button class="tab" onclick="switchTab('windows', this)">🪟 Windows <span class="tab-ct">6</span></button>
+      <button class="tab" onclick="switchTab('team', this)">👷 Our Team</button>
+    </div>
+    <div class="sec-hd">
+      <span class="sec-label">Our Work</span>
+      <h2 class="sec-title">Roofing Projects</h2>
+      <p class="sec-sub">Full roof replacements, storm damage restoration, and hail claims across Illinois. Click a thumbnail, then drag the handle to reveal the transformation.</p>
+    </div>
+    <div class="drag-hint">
+      <div class="drag-icon">↔</div>
+      Drag the handle to reveal before &amp; after — click thumbnails to switch projects
+    </div>
+    <div class="featured-wrap" id="feat-roofing" data-pct="48"
+         onmousedown="startDrag(event,this)" ontouchstart="startDrag(event,this)">
+      <img class="feat-before" id="feat-roofing-before"
+           src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=80" alt="Before">
+      <div class="feat-after-wrap" id="feat-roofing-after-wrap" style="clip-path:inset(0 0 0 48%)">
+        <img class="feat-after" id="feat-roofing-after"
+             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80" alt="After">
+      </div>
+      <div class="feat-divider" id="feat-roofing-divider" style="left:48%"></div>
+      <div class="feat-handle" style="left:48%">◀▶</div>
+      <span class="feat-label before">BEFORE</span>
+      <span class="feat-label after">AFTER</span>
+      <div class="feat-info">
+        <div class="feat-title" id="feat-roofing-title">Full Roof Replacement — Elburn, IL</div>
+        <div class="feat-meta">
+          <span id="feat-roofing-brand">CertainTeed Landmark®</span>
+          <span class="feat-tag" id="feat-roofing-tag">Roofing</span>
+        </div>
+      </div>
+    </div>
+    <div class="thumb-strip" id="thumbs-roofing"></div>
+  </div>
+</div>
+
+<!-- ═══════════ SIDING ═══════════ -->
+<div class="gallery-section" id="tab-siding">
+  <div class="gallery-inner">
+    <div class="tab-bar-inner">
+      <button class="tab active" onclick="switchTab('roofing', this)">🏠 Roofing <span class="tab-ct">6</span></button>
+      <button class="tab" onclick="switchTab('siding', this)">🏗 Siding <span class="tab-ct">6</span></button>
+      <button class="tab" onclick="switchTab('windows', this)">🪟 Windows <span class="tab-ct">6</span></button>
+      <button class="tab" onclick="switchTab('team', this)">👷 Our Team</button>
+    </div>
+    <div class="sec-hd">
+      <span class="sec-label">Our Work</span>
+      <h2 class="sec-title">Siding Projects</h2>
+      <p class="sec-sub">James Hardie, Mastic, Alside and more. See the dramatic difference quality siding installation makes to a home's curb appeal and weather protection.</p>
+    </div>
+    <div class="drag-hint">
+      <div class="drag-icon">↔</div>
+      Drag the handle to reveal before &amp; after — click thumbnails to switch projects
+    </div>
+    <div class="featured-wrap" id="feat-siding" data-pct="48"
+         onmousedown="startDrag(event,this)" ontouchstart="startDrag(event,this)">
+      <img class="feat-before" id="feat-siding-before"
+           src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=80" alt="Before">
+      <div class="feat-after-wrap" id="feat-siding-after-wrap" style="clip-path:inset(0 0 0 48%)">
+        <img class="feat-after" id="feat-siding-after"
+             src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1400&q=80" alt="After">
+      </div>
+      <div class="feat-divider" id="feat-siding-divider" style="left:48%"></div>
+      <div class="feat-handle" style="left:48%">◀▶</div>
+      <span class="feat-label before">BEFORE</span>
+      <span class="feat-label after">AFTER</span>
+      <div class="feat-info">
+        <div class="feat-title" id="feat-siding-title">James Hardie Re-Side — Geneva, IL</div>
+        <div class="feat-meta">
+          <span id="feat-siding-brand">HardiePlank® Cedarmill</span>
+          <span class="feat-tag" id="feat-siding-tag">Siding</span>
+        </div>
+      </div>
+    </div>
+    <div class="thumb-strip" id="thumbs-siding"></div>
+  </div>
+</div>
+
+<!-- ═══════════ WINDOWS ═══════════ -->
+<div class="gallery-section" id="tab-windows">
+  <div class="gallery-inner">
+    <div class="tab-bar-inner">
+      <button class="tab active" onclick="switchTab('roofing', this)">🏠 Roofing <span class="tab-ct">6</span></button>
+      <button class="tab" onclick="switchTab('siding', this)">🏗 Siding <span class="tab-ct">6</span></button>
+      <button class="tab" onclick="switchTab('windows', this)">🪟 Windows <span class="tab-ct">6</span></button>
+      <button class="tab" onclick="switchTab('team', this)">👷 Our Team</button>
+    </div>
+    <div class="sec-hd">
+      <span class="sec-label">Our Work</span>
+      <h2 class="sec-title">Window Projects</h2>
+      <p class="sec-sub">Simonton, Marvin, Pella and Alside window replacements. Energy efficiency, noise reduction and improved curb appeal — see the results for yourself.</p>
+    </div>
+    <div class="drag-hint">
+      <div class="drag-icon">↔</div>
+      Drag the handle to reveal before &amp; after — click thumbnails to switch projects
+    </div>
+    <div class="featured-wrap" id="feat-windows" data-pct="48"
+         onmousedown="startDrag(event,this)" ontouchstart="startDrag(event,this)">
+      <img class="feat-before" id="feat-windows-before"
+           src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1400&q=80" alt="Before">
+      <div class="feat-after-wrap" id="feat-windows-after-wrap" style="clip-path:inset(0 0 0 48%)">
+        <img class="feat-after" id="feat-windows-after"
+             src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=80" alt="After">
+      </div>
+      <div class="feat-divider" id="feat-windows-divider" style="left:48%"></div>
+      <div class="feat-handle" style="left:48%">◀▶</div>
+      <span class="feat-label before">BEFORE</span>
+      <span class="feat-label after">AFTER</span>
+      <div class="feat-info">
+        <div class="feat-title" id="feat-windows-title">Full Home Windows — Naperville, IL</div>
+        <div class="feat-meta">
+          <span id="feat-windows-brand">Simonton Reflections® 5500</span>
+          <span class="feat-tag" id="feat-windows-tag">Windows</span>
+        </div>
+      </div>
+    </div>
+    <div class="thumb-strip" id="thumbs-windows"></div>
+  </div>
+</div>
+
+
+<!-- ═══════════ OUR TEAM ═══════════ -->
+<div class="gallery-section" id="tab-team">
+  <div class="gallery-inner">
+    <div class="tab-bar-inner">
+      <button class="tab active" onclick="switchTab('roofing', this)">🏠 Roofing <span class="tab-ct">6</span></button>
+      <button class="tab" onclick="switchTab('siding', this)">🏗 Siding <span class="tab-ct">6</span></button>
+      <button class="tab" onclick="switchTab('windows', this)">🪟 Windows <span class="tab-ct">6</span></button>
+      <button class="tab" onclick="switchTab('team', this)">👷 Our Team</button>
+    </div>
+    <div class="sec-hd">
+      <span class="sec-label">The People Behind the Work</span>
+      <h2 class="sec-title">Meet Our Team</h2>
+      <p class="sec-sub">Family-owned and operated since 1973. Every project is handled by our trained, licensed crew — no subcontractors, no shortcuts.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-photo">👷</div>
+        <div class="team-body">
+          <div class="team-name">Mike Countryside</div>
+          <div class="team-role">Owner &amp; Lead Estimator</div>
+          <div class="team-bio">50+ years in the roofing industry. Third-generation contractor serving Kane County families.</div>
+          <div class="team-stats"><span>🏠 Est. 1973</span><span>📍 Elburn, IL</span></div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo">👷</div>
+        <div class="team-body">
+          <div class="team-name">Dave Countryside</div>
+          <div class="team-role">Project Manager</div>
+          <div class="team-bio">Specialises in insurance claims and storm damage restoration. Certified by GAF and CertainTeed.</div>
+          <div class="team-stats"><span>🛡 GAF Certified</span><span>🌩 Storm Specialist</span></div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo">👷</div>
+        <div class="team-body">
+          <div class="team-name">Tom Reyes</div>
+          <div class="team-role">Lead Installer — Roofing</div>
+          <div class="team-bio">15 years installing residential and commercial roofs across DuPage and Kane Counties.</div>
+          <div class="team-stats"><span>✅ Licensed</span><span>🏆 1,200+ Roofs</span></div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo">👷</div>
+        <div class="team-body">
+          <div class="team-name">Carlos Mendez</div>
+          <div class="team-role">Lead Installer — Siding &amp; Windows</div>
+          <div class="team-bio">Expert in James Hardie, Alside and Simonton installations. Meticulous finish quality.</div>
+          <div class="team-stats"><span>🪟 Windows Expert</span><span>🏗 Siding Certified</span></div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo">👷</div>
+        <div class="team-body">
+          <div class="team-name">Sarah Mitchell</div>
+          <div class="team-role">Customer Relations Manager</div>
+          <div class="team-bio">Your single point of contact from first call to final walkthrough. 10 years with the team.</div>
+          <div class="team-stats"><span>⭐ 4.9 Rated</span><span>📞 Always Available</span></div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo">👷</div>
+        <div class="team-body">
+          <div class="team-name">Jim Okafor</div>
+          <div class="team-role">Insurance Claims Specialist</div>
+          <div class="team-bio">Works directly with your insurance adjuster to ensure every legitimate claim is paid in full.</div>
+          <div class="team-stats"><span>📋 Claims Expert</span><span>💰 Max Payouts</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="team-cta">
+      <p>65% of our customers come through referrals — because every team member is personally invested in your home.</p>
+      <a href="index.html#contact" class="btn-primary">Get Your Free Inspection →</a>
+    </div>
+  </div>
+</div>
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="stats-strip-inner">
+    <div class="s-stat"><div class="s-stat-num">5,000+</div><div class="s-stat-lbl">Projects Completed</div></div>
+    <div class="s-stat"><div class="s-stat-num">50+</div><div class="s-stat-lbl">Years in Business</div></div>
+    <div class="s-stat"><div class="s-stat-num">A+</div><div class="s-stat-lbl">BBB Rating</div></div>
+    <div class="s-stat"><div class="s-stat-num">65%</div><div class="s-stat-lbl">Referral Customers</div></div>
+    <div class="s-stat"><div class="s-stat-num">4.9★</div><div class="s-stat-lbl">Google Rating</div></div>
+  </div>
+</div>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <div class="cta-banner-inner">
+    <h2>Ready to Transform Your Home?</h2>
+    <p>Get a free, no-obligation inspection from Illinois' most trusted roofing team. We serve Kane, DuPage and DeKalb Counties.</p>
+    <div class="cta-btns">
+      <a href="index.html#contact" class="btn-primary">Schedule Your Free Inspection →</a>
+      <a href="tel:6303658887" class="btn-outline">📞 (630) 365-8887</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© 2026 Countryside Roofing Inc. · Licensed #104.014799 · Bonded &amp; Insured</span>
+    <span>Kane, DuPage &amp; DeKalb Counties, IL · <a href="tel:6303658887">(630) 365-8887</a></span>
+  </div>
+</footer>
+
+<script>
+/* ── Nav ── */
+const hamburger   = document.getElementById('hamburger');
+const mobileNav   = document.getElementById('mobile-nav');
+const servicesBtn = document.getElementById('mob-services-btn');
+const servicesSub = document.getElementById('mob-services-sub');
+
+hamburger.addEventListener('click', () => {
+  const open = mobileNav.classList.toggle('is-open');
+  hamburger.classList.toggle('is-open', open);
+  hamburger.setAttribute('aria-expanded', open);
+  mobileNav.setAttribute('aria-hidden', !open);
+});
+servicesBtn.addEventListener('click', () => {
+  const open = servicesSub.classList.toggle('open');
+  servicesBtn.classList.toggle('open', open);
+  servicesBtn.setAttribute('aria-expanded', open);
+});
+mobileNav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav.classList.remove('is-open');
+    hamburger.classList.remove('is-open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobileNav.setAttribute('aria-hidden', 'true');
+  });
+});
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 1024) { mobileNav.classList.remove('is-open'); hamburger.classList.remove('is-open'); }
+});
+
+/* ── Project data ── */
+const projects = {
+  roofing: [
+    { title:'Full Roof Replacement — Elburn, IL',       brand:'CertainTeed Landmark®',          tag:'Roofing',
+      before:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Hail Storm Repair — Geneva, IL',           brand:'GAF Timberline HDZ®',             tag:'Storm',
+      before:'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Architectural Upgrade — St. Charles, IL',  brand:'CertainTeed Presidential TL®',   tag:'Premium',
+      before:'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Metal Roof Install — Batavia, IL',         brand:'Metal Roofing Alliance Standing Seam', tag:'Metal',
+      before:'https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Wind Damage Claim — Elgin, IL',            brand:'GAF Timberline AS II®',           tag:'Storm',
+      before:'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Designer Shingles — Naperville, IL',       brand:'CertainTeed Belmont®',            tag:'Premium',
+      before:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=80' },
+  ],
+  siding: [
+    { title:'James Hardie Re-Side — Geneva, IL',        brand:'HardiePlank® Cedarmill',         tag:'Siding',
+      before:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Vinyl Insulated Siding — Elburn, IL',      brand:'Mastic Quest® Insulated',        tag:'Siding',
+      before:'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Board & Batten — Wheaton, IL',             brand:'Alside Ascend® Composite',       tag:'Premium',
+      before:'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Full Exterior Re-Side — St. Charles, IL',  brand:'Royal Celect® + HardieTrim®',    tag:'Full Exterior',
+      before:'https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Composite Cladding — Batavia, IL',         brand:'Alside Ascend® Composite',       tag:'Siding',
+      before:'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Cedar Shake Siding — Naperville, IL',      brand:'James Hardie HardieShingle®',    tag:'Premium',
+      before:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=80' },
+  ],
+  windows: [
+    { title:'Full Home Windows — Naperville, IL',       brand:'Simonton Reflections® 5500',     tag:'Windows',
+      before:'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Picture Window Upgrade — Batavia, IL',     brand:'Marvin Elevate® Fiberglass',     tag:'Premium',
+      before:'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Bay Window Install — Aurora, IL',          brand:'Pella Lifestyle Series',          tag:'Windows',
+      before:'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Patio Door Replacement — Geneva, IL',      brand:'Alside Mezzo® + Patio Door',     tag:'Windows & Doors',
+      before:'https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Casement Windows — Wheaton, IL',           brand:'Simonton Reflections® 5500',     tag:'Windows',
+      before:'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1400&q=80' },
+    { title:'Fiberglass Windows — St. Charles, IL',     brand:'Marvin Essential® Series',       tag:'Windows',
+      before:'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80',
+      after: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=80' },
+  ]
+};
+
+/* ── Build thumbnails ── */
+function buildThumbs(tab) {
+  const strip = document.getElementById('thumbs-' + tab);
+  strip.innerHTML = '';
+  projects[tab].forEach((p, i) => {
+    const div = document.createElement('div');
+    div.className = 'thumb' + (i === 0 ? ' active' : '');
+    div.innerHTML = `
+      <div class="thumb-img">
+        <img src="${p.before}" alt="${p.title}" loading="lazy">
+      </div>
+      <div class="thumb-body">
+        <div class="thumb-title">${p.title.split(' — ')[0]}</div>
+        <div class="thumb-loc">📍 ${p.title.split(' — ')[1] || ''}</div>
+      </div>`;
+    div.addEventListener('click', () => selectThumb(tab, i, div));
+    strip.appendChild(div);
+  });
+}
+['roofing','siding','windows'].forEach(buildThumbs);
+
+/* ── Thumbnail select ── */
+function selectThumb(tab, idx, thumbEl) {
+  document.querySelectorAll(`#thumbs-${tab} .thumb`).forEach(t => t.classList.remove('active'));
+  thumbEl.classList.add('active');
+  const p = projects[tab][idx];
+  document.getElementById(`feat-${tab}-before`).src = p.before;
+  document.getElementById(`feat-${tab}-after`).src  = p.after;
+  document.getElementById(`feat-${tab}-after-wrap`).style.clipPath = 'inset(0 0 0 48%)';
+  document.getElementById(`feat-${tab}-divider`).style.left = '48%';
+  document.getElementById(`feat-${tab}`).dataset.pct = '48';
+  document.getElementById(`feat-${tab}-title`).textContent = p.title;
+  document.getElementById(`feat-${tab}-brand`).textContent = p.brand;
+  document.getElementById(`feat-${tab}-tag`).textContent   = p.tag;
+}
+
+/* ── Tab switching ── */
+function switchTab(id, btn) {
+  // Hide all sections, clear all active pills
+  document.querySelectorAll('.gallery-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+
+  // Show target section
+  const section = document.getElementById('tab-' + id);
+  section.classList.add('active');
+
+  // Mark the matching pill in the now-visible section as active
+  section.querySelectorAll('.tab').forEach(b => {
+    if (b.getAttribute('onclick').includes("'" + id + "'")) {
+      b.classList.add('active');
+    }
+  });
+}
+
+/* ── Before/After drag slider ── */
+let activeDrag = null;
+
+function startDrag(e, wrap) {
+  e.preventDefault();
+  activeDrag = wrap;
+  document.addEventListener('mousemove', onDrag);
+  document.addEventListener('mouseup',   stopDrag);
+  document.addEventListener('touchmove', onDrag, { passive: false });
+  document.addEventListener('touchend',  stopDrag);
+}
+function onDrag(e) {
+  if (!activeDrag) return;
+  e.preventDefault();
+  const rect = activeDrag.getBoundingClientRect();
+  const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+  let pct = ((clientX - rect.left) / rect.width) * 100;
+  pct = Math.max(3, Math.min(97, pct));
+  const tab = activeDrag.id.replace('feat-', '');
+  document.getElementById(`feat-${tab}-after-wrap`).style.clipPath = `inset(0 0 0 ${pct}%)`;
+  document.getElementById(`feat-${tab}-divider`).style.left = pct + '%';
+}
+function stopDrag() {
+  activeDrag = null;
+  document.removeEventListener('mousemove', onDrag);
+  document.removeEventListener('mouseup',   stopDrag);
+  document.removeEventListener('touchmove', onDrag);
+  document.removeEventListener('touchend',  stopDrag);
+}
+</script>
+</body>
+</html>
