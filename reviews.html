@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews | Countryside Roofing Inc.</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--green:#2a6049;--green-dark:#1c4434;--green-light:#e8f4ee;--gold:#e8a020;--text:#1a2820;--text-mid:#4a5e54;--gray-line:#e5e9e6;--off-white:#f7f9f7;--max-w:1400px;--nav-h:68px;}
+body{font-family:'Outfit',sans-serif;font-size:16px;background:var(--off-white);color:var(--text);}
+.util-bar{background:var(--green-dark);color:rgba(255,255,255,.75);font-size:.72rem;padding:.45rem 16px;display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;}
+.util-sep{color:rgba(255,255,255,.2);}
+.site-nav{background:#fff;position:sticky;top:0;z-index:500;box-shadow:0 2px 24px rgba(0,0,0,.09);border-bottom:3px solid var(--green);}
+.nav-inner{max-width:var(--max-w);margin:0 auto;padding:0 16px;height:var(--nav-h);display:flex;align-items:center;gap:1rem;}
+.nav-logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;}
+.nav-logo-icon{width:42px;height:42px;background:var(--green);border-radius:8px;display:flex;align-items:center;justify-content:center;}
+.nav-logo-name{font-size:1.05rem;font-weight:700;color:var(--text);display:block;line-height:1.2;}
+.nav-logo-sub{font-size:.6rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:#7a8f84;display:block;}
+.nav-spacer{flex:1;}
+.nav-links{display:flex;list-style:none;align-items:center;gap:.1rem;}
+.nav-links a{color:#4a5e54;text-decoration:none;font-size:.875rem;font-weight:600;padding:.5rem .7rem;border-radius:5px;transition:color .2s,background .2s;}
+.nav-links a:hover,.nav-links li.active a{color:var(--green);background:var(--green-light);}
+.nav-links li.active a{font-weight:700;}
+.nav-cta{background:var(--gold);color:#fff!important;font-family:'Outfit',sans-serif;font-size:.84rem;font-weight:700!important;padding:.6rem 1.2rem!important;border-radius:5px!important;text-decoration:none;white-space:nowrap;display:inline-block;}
+.hero{background:linear-gradient(135deg,var(--green-dark),var(--green));padding:5rem 0 4rem;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;right:-80px;top:-80px;width:400px;height:400px;border-radius:50%;background:rgba(255,255,255,.04);}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 24px;}
+.breadcrumb{font-size:.8rem;color:rgba(255,255,255,.55);margin-bottom:1.2rem;display:flex;gap:.4rem;}
+.breadcrumb a{color:rgba(255,255,255,.7);text-decoration:none;}
+h1{font-size:clamp(2.2rem,4vw,3.2rem);font-weight:800;color:#fff;line-height:1.1;margin-bottom:1rem;}
+h1 em{font-style:normal;color:#4caf7d;}
+.hero p{color:rgba(255,255,255,.8);font-size:1.05rem;max-width:600px;}
+.coming-soon{padding:6rem 0;text-align:center;}
+.coming-soon h2{font-size:1.8rem;font-weight:800;color:var(--text);margin-bottom:1rem;}
+.coming-soon p{color:var(--text-mid);font-size:1rem;max-width:500px;margin:0 auto 2rem;}
+.btn{background:var(--green);color:#fff;font-family:'Outfit',sans-serif;font-weight:700;font-size:.95rem;padding:1rem 2.2rem;border-radius:7px;text-decoration:none;display:inline-block;transition:background .2s;}
+.btn:hover{background:var(--green-dark);}
+footer{background:var(--green-dark);color:rgba(255,255,255,.6);padding:2rem 0;font-size:.82rem;}
+.footer-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+.footer-inner a{color:rgba(255,255,255,.75);text-decoration:none;}
+@media(max-width:767px){.util-bar{display:none;}.nav-links{display:none;}}
+</style>
+</head>
+<body>
+<div class="util-bar">
+  <span>📍 Serving Kane, DuPage &amp; DeKalb Counties, IL</span>
+  <span class="util-sep">|</span>
+  <span>Licensed #104.014799 · Bonded &amp; Insured</span>
+  <span class="util-sep">|</span>
+  <span>Est. 1973 · 100% Family Owned &amp; Operated</span>
+</div>
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><svg viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M12 3L2 10h2v9h6v-5h4v5h6v-9h2L12 3z"/></svg></div>
+      <div><span class="nav-logo-name">Countryside Roofing Inc.</span><span class="nav-logo-sub">Est. 1973 · 50+ Years</span></div>
+    </a>
+    <div class="nav-spacer"></div>
+    <ul class="nav-links">
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li class="active"><a href="reviews.html">Reviews</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <a href="index.html#contact" class="nav-cta">Get a Free Quote</a>
+  </div>
+</header>
+<section class="hero">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Reviews</span></div>
+    <h1>What Our Customers <em>Say</em></h1>
+    <p>200+ verified reviews from homeowners across Kane, DuPage, and DeKalb Counties.</p>
+  </div>
+</section>
+<div class="coming-soon">
+  <h2>Full Reviews Page Coming Soon</h2>
+  <p>In the meantime, visit our Google Business profile or check out the review samples on our About Us page.</p>
+  <a href="about.html#reviews-sample" class="btn">← Back to About Us</a>
+</div>
+<footer><div class="container"><div class="footer-inner">
+  <span>© 2026 Countryside Roofing Inc. · Licensed #104.014799</span>
+  <span>Kane, DuPage &amp; DeKalb Counties · <a href="tel:6303658887">(630) 365-8887</a></span>
+</div></div></footer>
+</body>
+</html>
